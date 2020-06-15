@@ -1,7 +1,12 @@
 .login-modal *{
-	font-family: serif;
+	font-family: inherit;
 	font-size: auto;
 }
+
+.discussion{
+	height: 100vh;
+}
+
 .login-modal .container{
 	height:100%;
 	width: 100%;
@@ -11,7 +16,7 @@
 }
 .login-modal .form-box{
 	width: 350px;
-	height: 460px;
+	height: 500px;
 	position: relative;
 	margin:5% auto;
 	background:whitesmoke;
@@ -23,6 +28,7 @@
 	opacity: 0;
 	transition: 0.3s ease-in; 
 	top:60px;
+	text-transform: uppercase;
 }
 .login-modal #click:checked ~ .form-box{
 	opacity: 1;
@@ -47,6 +53,7 @@
 	border:10px;
 	outline: none;
 	position: relative;
+	text-transform: uppercase;
 }
 .login-modal .button-box{
 	position: absolute;
@@ -81,12 +88,24 @@
 .login-modal .input-field{
 	width: 100%;
 	padding: 5px 15px;
-	margin:2px 0;
-	border:1.5px solid #999;
-	border-radius: 10px;
+	margin-top:7px;
+	border-radius: 3px;
 	outline: none;
-	background:transparent;
+	background:#fff;
+	border: none;
+	border-bottom: 1px solid transparent;
 }
+
+.login-modal .input-field:focus{
+	outline: none;
+	border-bottom: 2.5px solid rgb(129, 161, 39);
+	box-shadow: 0 10px 20px rgb(0, 0, 0, .1);
+}
+
+.login-modal .input-field:focus:invalid{
+	border-bottom: 2.5px solid rgb(212, 33, 33);
+}
+
 .login-modal .submit-btn{
 	width:85%;
 	top: 400px;
@@ -99,8 +118,21 @@
 	outline:none;
 	margin-left: 30px;
 	border-radius: 15px;
+	transition: all .2s;
+	text-transform: uppercase;
 
 }
+.login-modal .submit-btn:hover{
+	background:rgb(64, 125, 206);
+	transform: translateY(-5px) scale(1.05);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.login-modal .submit-btn:active{
+	transform: translateY(-1px) scale(1.05);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
 .login-modal .check-box{
 	margin:30px 10px 36px 10px;
 	font-family: serif ;
@@ -128,9 +160,23 @@
 	border:0;
 	outline:none;
 	border-radius: 15px;
-	margin-top:12px;
+	margin-top:20px;
 	margin-left:25px;
+	transition: all .2s;
+	text-transform: uppercase;
 }
+
+.login-modal .submit-button:hover{
+	background:rgb(64, 125, 206);
+	transform: translateY(-5px) scale(1.05);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.login-modal .submit-button:active{
+	transform: translateY(-1px) scale(1.05);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
 .login-modal #click{
 	display: none;
 }

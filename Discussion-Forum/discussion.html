@@ -2,14 +2,9 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
-    
-    <title>PISB | Discussion Forum</title>
-=======
 
     <title>PISB | DISCUSSION FORUM</title>
 
->>>>>>> 00db62ab5a1c9d105167bdd3acb2879839136a2b
     <link rel="icon" type="image/png" href="../common/title/title-logo.png">
 
     <meta charset="utf-8">
@@ -148,59 +143,42 @@
     <div class="container-fluid">
 
 
-
-
-
-
-
         <!--PS:  Inline styling murdabaad! -->
-        <div class="container login-modal " style="height: 100vh">
-            <input type="checkbox" id="click">
-            <label for="click" class="click-me">Click Me </label>
-            <div class="form-box">
-                <label class="fa fa-times" aria-hidden="true"></label>
-                <div class="button-box">
-                    <div id="btn"></div>
-                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                    <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+        <section class="discussion">
+            <div class="container login-modal">
+                <input type="checkbox" id="click">
+                <label for="click" class="click-me">Click Me </label>
+                <div class="form-box">
+                    <label class="fa fa-times" aria-hidden="true"></label>
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                        <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+                    </div>
+                    <form id="login" class="input-area">
+                        <label><i class="fa fa-user" aria-hidden="true"> Username</i><input type="text" class="input-field"
+                                required></label>
+                        <label><i class="fa fa-lock" aria-hidden="true"> Password</i><input type="password" class="input-field"
+                                required></label>
+                        <input type="checkbox" class="check-box"><span>Remember Me</span>
+                        <button type="submit" class="submit-btn">Log In</button>
+                    </form>
+                    <form id="register" class="input-group">
+                        <label><i class="fa fa-envelope" aria-hidden="true"> Email</i><input type="email"
+                                class="input-field" required></label>
+                        <label><i class="fa fa-user" aria-hidden="true"> Username</i><input type="text" class="input-field"
+                                required></label>
+                        <label><i class="fa fa-lock" aria-hidden="true"> Password</i><input type="Password"
+                                class="input-field" required></label>
+                        <label><i class="fa fa-lock" aria-hidden="true"> Confirm Password</i><input type="Password"
+                                class="input-field" required>
+                        </label>
+                        <button type="submit" class="submit-button">Sign Up</button>
+                    </form>
                 </div>
-                <form id="login" class="input-area">
-                    <label><i class="fa fa-user" aria-hidden="true"> Username:</i><input type="text" class="input-field"
-                            required></label>
-                    <label><i class="fa fa-lock" aria-hidden="true"> Password:</i><input type="text" class="input-field"
-                            required></label>
-                    <input type="checkbox" class="check-box"><span>Remember Me</span>
-                    <button type="submit" class="submit-btn">Log In</button>
-                </form>
-                <form id="register" class="input-group">
-                    <label><i class="fa fa-envelope" aria-hidden="true"> Email:</i><input type="email"
-                            class="input-field" required></label>
-                    <label><i class="fa fa-user" aria-hidden="true"> Username:</i><input type="text" class="input-field"
-                            required></label>
-                    <label><i class="fa fa-lock" aria-hidden="true"> Password:</i><input type="Password"
-                            class="input-field" required></label>
-                    <label><i class="fa fa-lock" aria-hidden="true"> Confirm Password:</i><input type="Password"
-                            class="input-field" required>
-                    </label>
-                    <button type="submit" class="submit-button">Sign Up</button>
-                </form>
             </div>
-        </div>
-
-
-
-
-
-
-
-
+        </section>
     </div>
-
-
-
-    </div>
-
-
     <!--footer-->
     <footer class="new_footer_area bg_color" id="footer">
         <div class="new_footer_top">
