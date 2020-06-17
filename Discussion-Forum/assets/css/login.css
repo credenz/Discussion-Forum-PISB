@@ -15,7 +15,7 @@
 	position: absolute;	
 }
 .login-modal .form-box{
-	width: 330px;
+	width: 325px;
 	height: 430px;
 	position: relative;
 	margin:5% auto;
@@ -93,14 +93,14 @@
 .login-modal .input-group{
 	top: 100px;
 	position: absolute;
-	width: 280px;
+	width: 270px;
 	transition: .5s;
 	margin-left: -15px;
 }
 .login-modal .input-area{
 	top: 150px;
 	position: absolute;
-	width: 280px;
+	width: 270px;
 	transition: .5s;
 	margin-left: -20px;
 }
