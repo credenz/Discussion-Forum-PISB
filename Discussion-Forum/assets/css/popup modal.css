@@ -8,14 +8,14 @@ body .search-box{
 	left: 70%;
 	transform: translate(-50%,-50%);
 	background:white;
-	height:55px;
+	height:52px;
 	border-radius: 50px;
 	padding: 6px;
 	border:2px solid #142850
 }
 ::-webkit-input-placeholder{
 	color:black;
-	font-size: 22px;
+	font-size: 20px;
 }
 ::-ms-input-placeholder{
 	color:black;
@@ -24,14 +24,14 @@ body .search-box{
 	color:black;
 }
 .search-btn{
-	padding-left: 2px;
-	padding-bottom: 3px;
-	margin-top: 5px ;
+	padding-left: 1.5px;
+	padding-bottom:2.5px;
+	margin-top: 2px ;
 	margin-right: 10px;
 	color:white;
 	float:right;
-	width:32px;
-	height:32px;
+	width:33px;
+	height:33px;
 	border-radius: 50%;
 	background:#142850;
 	display: flex;
@@ -43,12 +43,12 @@ body .search-box{
 	border:none;
 	background:none;
 	outline:none;
-	margin-left:10px;
+	margin-left:15px;
 	float: left;
 	color:#142850;
 	font-size: 20px;
 	transition: 0.4s;
-	line-height: 40px;
+	line-height: 30px;
 	width: 380px;
 	text-decoration: none;
 }
@@ -66,7 +66,7 @@ body select{
 	background:white;
 	background-image: none;
 	flex:1;
-	padding-left:30px;
+	padding-left:20px;
 	color:black;
 	cursor: pointer;
 	text-align: center;
@@ -87,6 +87,10 @@ body select{
 	text-align: center;
 	top: 14vh;
 	border:2px solid #142850;
+	cursor: pointer;
+}
+.select:hover{
+	box-shadow: 0 5px 5px 0 grey;
 }
 .select::after{
 	content:'\25BC';
@@ -103,6 +107,7 @@ body select{
 }
 .select:hover::after{
 	color:#142850;
+	cursor: pointer;
 }
 .trending{
 	z-index: 1;
@@ -116,7 +121,7 @@ a.trend{
 	text-align: center;
 	justify-content: center;
 	width: 180px;
-	height: 52px;
+	height: 51px;
 	padding-top: 8px;
 	font-size: 20px;
 	color:black;
@@ -126,6 +131,9 @@ a.trend{
 	text-underline-position: none;
 	text-decoration: none;
 	border:2px solid #142850;
+}
+a.trend:hover{
+	box-shadow: 0 5px 5px 0 grey ;
 }
 .askq{
 	z-index: 1;
@@ -139,7 +147,7 @@ a.ask{
 	text-align: center;
 	justify-content: center;
 	width: 280px;
-	height: 52px;
+	height: 51px;
 	padding-top: 8px;
 	font-size: 20px;
 	color:black;
@@ -149,5 +157,8 @@ a.ask{
 	cursor: pointer;
 	text-underline-position: none;
 	text-decoration: none;
+}
+a.ask:hover{
+	box-shadow: 0 5px 5px 0 grey;
 }
 
