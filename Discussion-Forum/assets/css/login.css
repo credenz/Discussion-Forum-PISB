@@ -15,7 +15,8 @@
 	position: absolute;	
 }
 .login-modal .form-box{
-	width: 325px;
+	z-index: 2;
+	width: 300px;
 	height: 430px;
 	position: relative;
 	margin:5% auto;
@@ -39,13 +40,14 @@
 	cursor: pointer;
 	transition: all 0.3s ease-out;
 	position: absolute;
-	top: 80px;
+	top: 40vh;
 	left: 15px;
   }
   .login-modal .button:hover {
 	background: #06D85F;
   }
  .login-modal .overlay {
+	 z-index: 2;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -62,9 +64,9 @@
   }
 .login-modal .button-box{
 	width:220px;
-	margin:60px auto;
+	margin:60px -20px;
 	position: relative;
-	box-shadow: 0 0 5px 2px purple;
+	box-shadow: 0 0 5px 2px #142850;
 	border-radius: 30px;
 }
 .login-modal .toggle-btn{
@@ -78,7 +80,7 @@
 .login-modal .button-box{
 	position: absolute;
 	top:-16px;
-	left: 65px;
+	left: 60px;
 }
 .login-modal #btn{
 	top: 0;
@@ -95,14 +97,14 @@
 	position: absolute;
 	width: 270px;
 	transition: .5s;
-	margin-left: -15px;
+	margin-left: -30px;
 }
 .login-modal .input-area{
 	top: 150px;
 	position: absolute;
 	width: 270px;
 	transition: .5s;
-	margin-left: -20px;
+	margin-left: -30px;
 }
 .login-modal .input-field{
 	width: 100%;
@@ -133,7 +135,7 @@
 	background:skyblue;
 	border:0;
 	outline:none;
-	margin-left: 30px;
+	margin-left: 25px;
 	border-radius: 15px;
 	transition: all .2s;
 }
@@ -176,7 +178,7 @@
 	outline:none;
 	border-radius: 15px;
 	margin-top:20px;
-	margin-left:25px;
+	margin-left:20px;
 	transition: all .2s
 }
 
@@ -192,8 +194,8 @@
 }
 .login-modal .close{
 	position: absolute;
-	right: 20px;
-	top: 10px;
+	right: 16px;
+	top: 8px;
 	cursor: pointer;
 	font-size: 30px;
 	font-weight:bold;
