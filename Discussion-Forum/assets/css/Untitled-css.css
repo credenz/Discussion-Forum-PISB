@@ -36,7 +36,7 @@ i{
     color: white;
     display: flex;
     padding: 2em;
-    top: 7%;
+    top: 17%;
     left: 13%;
     border-radius: 10px;
 }
@@ -50,9 +50,30 @@ i{
     color: white;
     display: flex;
     padding: 2em;
-    top: 50%;
+    top: 60%;
     left: 28%;
     border-radius: 10px;
+}
+.people-card{
+    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 40px;
+    position: absolute;
+    background: #050d4e;
+    color: white;
+    display: flex;
+    padding: 0.5em;
+    top: 89%;
+    left: 23%;
+    border-radius: 10px;
+}
+.card-body{
+    color: black;
+}
+.people{
+    position: absolute;
+    top: 89%;
+    left: 23%;
 }
 button{
     
@@ -98,4 +119,7 @@ button:hover{
 .auth-name{
     margin-top: 10px;
     font-size: medium;
+}
+footer{
+    margin-top: 500px;
 }
