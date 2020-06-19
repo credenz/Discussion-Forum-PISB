@@ -9,7 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="assets/css/Untitled-css.css">
     <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!-- Font Awesome (keep both the versions) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -143,28 +147,27 @@
         <!-- Active Domain -->
         <!--PS:  Inline styling murdabaad! -->
         <div class="container " style="height: 100vh">
-            <div class="m-card">
-        <div class="profile-sidebar">
-            <img class="profile-image" src="assets/img/download.jpg"  height="65" width="65"  alt=" ">
-            <h5 class="auth-name">Author Name</h>
-            <h5 class="domain">WEB DEVELOPMENT</h5>
-        </div>
-        <div class="profile-main">
-            <h6 class="profile-name">Bed sincerity yet therefore forfeited his certainty neglected questions. Pursuit chamber as elderly amongst on. Distant however warrant farther to of. My justice wishing prudent waiting in be ?</h6>
-            <p class="profile-description">Web development, HTML, CSS, JS</p>
-            <button style="font-size: 14px; margin:10px 0px 0px 50px; border-radius:10px" onclick="quecounter()">Upvote
-            <i class="fa fa-thumbs-up" aria-hidden="true"></i>  41</button>
-            <button style="font-size: 14px; margin:10px 0px 0px 20px; border-radius:10px" onclick="queDecrease()">Downvote
-            <i class="fa fa-thumbs-down" aria-hidden="true"></i>  0
-            </button>
-            <button style="font-size: 14px; margin:10px 0px 0px 20px; border-radius:10px">Reply
+            <button class="back" style="margin: 70px 0px 0px 90px" onclick="goBack()">Back to all Questions</button>
+        <div class="m-card">
+            <div class="profile-sidebar">
+                <img class="profile-image" src="assets/img/download.jpg"  height="65" width="65"  alt=" ">
+                    <h5 class="auth-name">Author Name</h>
+                    <h5 class="domain">WEB DEVELOPMENT</h5>
+            </div>
+            <div class="profile-main">
+                <h6 class="profile-name">Bed sincerity yet therefore forfeited his certainty neglected questions. Pursuit chamber as elderly amongst on. Distant however warrant farther to of. My justice wishing prudent waiting in be ?</h6>
+                <p class="profile-description">Web development, HTML, CSS, JS</p>
+                <button style="font-size: 14px; margin:10px 0px 0px 50px; border-radius:10px" onclick="quecounter()">Upvote
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>  41</button>
+                <button style="font-size: 14px; margin:10px 0px 0px 20px; border-radius:10px" onclick="queDecrease()">Downvote
+                <i class="fa fa-thumbs-down" aria-hidden="true"></i>  0
+                </button>
+                <button style="font-size: 14px; margin:10px 0px 0px 20px; border-radius:10px">Reply
                 <i class="fa fa-mail-reply"></i>
-            </button>
-            
-            <i style="margin: 50px 0px 0px 350px;">12h</i>
-            
+                </button>
+                <i style="margin: 50px 0px 0px 350px;">12h</i>
+            </div>
         </div>
-    </div>
             <div class="answer-card">
                 <div class="profile-sidebar">
                     <img class="profile-image" src="assets/img/download.jpg"  height="50" width="50"  alt=" ">
@@ -184,8 +187,29 @@
                     <i style="margin: 20px 0px 0px 235px;">15h</i>   
                 </div>
             </div>
+            <h2 style="margin: 120px 0px 0px 0px" class="people">People also ask:</h2>
+            <div data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="margin: 180px 0px 0px 0px" class="people-card">
+                <a href="http://pictieee.in/">Q.)What else you want to learn?</a>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        this is the answer
+                    </div>
+                </div>
+            </div> 
+            <div style="margin: 230px 0px 0px 0px" class="people-card">
+               <a href="http://pictieee.in/" > Q.)Ferrars all spirits his imagine effects amongst neither. It bachelor cheerful of mistaken. </a>
+            </div> 
+            <div style="margin: 280px 0px 0px 0px" class="people-card">
+                <a href="http://pictieee.in/" >Q.)At missed advice my it no sister. Miss told ham dull knew see she spot near can.</a>
+            </div> 
+            <div style="margin: 330px 0px 0px 0px" class="people-card">
+                <a href="http://pictieee.in/" >Q.)Mistress in on so laughing throwing endeavor occasion welcomed. </a>
+            </div> 
+            <div style="margin: 380px 0px 0px 0px" class="people-card">
+                <a href="http://pictieee.in/" >Q.)Effect twenty indeed beyond for not had county. The use him without greatly can private. </a>
+            </div> 
         </div>
-
+       
 
     <!--footer-->
     <footer class="new_footer_area bg_color" id="footer">
