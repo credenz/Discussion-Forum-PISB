@@ -7,10 +7,11 @@ body .search-box{
 	position: absolute;
 	left: 70%;
 	transform: translate(-50%,-50%);
-	background:skyblue;
+	background:white;
 	height:55px;
 	border-radius: 50px;
 	padding: 6px;
+	border:2px solid #142850
 }
 ::-webkit-input-placeholder{
 	color:black;
@@ -62,7 +63,7 @@ body select{
 	outline:0;
 	box-shadow: none;
 	border:0!important;
-	background:skyblue;
+	background:white;
 	background-image: none;
 	flex:1;
 	padding-left:30px;
@@ -79,12 +80,13 @@ body select{
 	width:23vw;
 	height:7.8vh;
 	line-height: 2;
-	background:skyblue;
+	background:white;
 	border-radius: 10px;
 	left:37%;
 	overflow: hidden;
 	text-align: center;
 	top: 14vh;
+	border:2px solid #142850;
 }
 .select::after{
 	content:'\25BC';
@@ -92,7 +94,7 @@ body select{
 	top:9px;
 	right: 0;
 	padding-right:1em;
-	background:skyblue;
+	background:white;
 	cursor: pointer;
 	pointer-events: none;
 	transition: 0.25s all ease;
@@ -118,12 +120,12 @@ a.trend{
 	padding-top: 8px;
 	font-size: 20px;
 	color:black;
-	border:2px white;
 	border-radius:10px;
-	background:skyblue;
+	background:white;
 	cursor: pointer;
 	text-underline-position: none;
 	text-decoration: none;
+	border:2px solid #142850;
 }
 .askq{
 	z-index: 1;
@@ -141,9 +143,9 @@ a.ask{
 	padding-top: 8px;
 	font-size: 20px;
 	color:black;
-	border:2px white;
+	border:2px solid #142852;
 	border-radius:10px;
-	background:skyblue;
+	background:white;
 	cursor: pointer;
 	text-underline-position: none;
 	text-decoration: none;
