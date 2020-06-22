@@ -1,0 +1,105 @@
+
+body{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.6;
+    
+}
+.brdr{
+    border: 2px solid red;
+}
+.main-cont{
+    margin-top: 60px;
+}
+.back{
+    margin: 3vw;
+    width: 20vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #050d4e;
+    color: white;
+}
+
+.m-card{
+    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
+    height: fit-content; 
+    background: #050d4e;
+    color: white;
+    border-radius: 10px;
+}
+.answer-card{
+    margin-top: 30px;
+    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height:fit-content;
+    position: absolute;
+    background: #050d4e;
+    color: white;
+    display: flex;
+    padding: 2em;
+    top: 60%;
+    left: 28%;
+    border-radius: 10px;
+}
+
+.people-card{
+    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
+    
+    height: fit-content;
+    
+    background: #050d4e;
+    color: white;
+    
+    padding: 0.5em;
+    
+    
+    border-radius: 10px;
+}
+
+.card-body{
+    color: black;
+}
+.people{
+    position: absolute;
+    top: 89%;
+    left: 23%;
+}
+
+.back:hover{
+    box-shadow: 3px 3px 5px grey;
+}
+
+.profile-name{
+    margin-left: 50px;
+    font-weight: 700;
+}
+.ansprofile-name{
+    margin-left: 50px;
+    font-weight: 600;
+}
+.profile-description{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: 300;
+}
+.profile-sidebar{
+    text-align: center;
+}
+.domain{
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius:10px;
+    padding: 5px;
+    font-size: small;
+}
+
+.profile-image{
+    border-radius: 50%;
+}
+.auth-name{
+    margin-top: 10px;
+    font-size: medium;
+}
