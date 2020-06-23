@@ -1,33 +1,32 @@
-.login-modal *{
+.login-modal * {
 	font-family: serif;
 	font-size: auto;
 }
 
-.discussion{
-	height: 100vh;
-}
 
-.login-modal .container{
-	height:100%;
+.login-modal .container {
+	height: 100%;
 	width: 100%;
 	background-position: center;
 	background-size: cover;
-	position: absolute;	
+	position: absolute;
 }
-.login-modal .form-box{
+
+.login-modal .form-box {
 	z-index: 2;
 	width: 300px;
 	height: 430px;
 	position: relative;
-	margin:5% auto;
-	background:whitesmoke;
+	margin: 5% auto;
+	background: whitesmoke;
 	box-sizing: border-box;
 	padding: 7px;
 	border-radius: 15px;
 	overflow: hidden;
-	transition: 0.3s ease-in; 
-	top:60px;
+	transition: 0.3s ease-in;
+	top: 60px;
 }
+
 .login-modal .button {
 	font-size: medium;
 	font-weight: 800;
@@ -42,12 +41,14 @@
 	position: absolute;
 	top: 40vh;
 	left: 15px;
-  }
-  .login-modal .button:hover {
+}
+
+.login-modal .button:hover {
 	background: #06D85F;
-  }
- .login-modal .overlay {
-	 z-index: 2;
+}
+
+.login-modal .overlay {
+	z-index: 2;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -57,153 +58,169 @@
 	transition: opacity 500ms;
 	visibility: hidden;
 	opacity: 0;
-  }
+}
+
 .login-modal .overlay:target {
 	visibility: visible;
 	opacity: 1;
-  }
-.login-modal .button-box{
-	width:220px;
-	margin:60px -20px;
+}
+
+.login-modal .button-box {
+	width: 220px;
+	margin: 60px -20px;
 	position: relative;
 	box-shadow: 0 0 5px 2px #142850;
 	border-radius: 30px;
 }
-.login-modal .toggle-btn{
+
+.login-modal .toggle-btn {
 	padding: 5px 25px;
 	cursor: pointer;
-	background:transparent;
-	border:10px;
+	background: transparent;
+	border: 10px;
 	outline: none;
 	position: relative;
 }
-.login-modal .button-box{
+
+.login-modal .button-box {
 	position: absolute;
-	top:-16px;
+	top: -16px;
 	left: 60px;
 }
-.login-modal #btn{
+
+.login-modal #btn {
 	top: 0;
 	left: 0;
 	position: absolute;
 	width: 110px;
 	height: 100%;
-	background:skyblue;
+	background: skyblue;
 	border-radius: 15px;
 	transition: .5s;
 }
-.login-modal .input-group{
+
+.login-modal .input-group {
 	top: 100px;
 	position: absolute;
 	width: 270px;
 	transition: .5s;
 	margin-left: -30px;
 }
-.login-modal .input-area{
+
+.login-modal .input-area {
 	top: 150px;
 	position: absolute;
 	width: 270px;
 	transition: .5s;
 	margin-left: -30px;
 }
-.login-modal .input-field{
+
+.login-modal .input-field {
 	width: 100%;
 	padding: 5px 15px;
-	margin:-3px;
+	margin: -3px;
 	outline: none;
-	background:transparent;
-	border:1.5px solid #999;
-	border-radius: 10px;	
+	background: transparent;
+	border: 1.5px solid #999;
+	border-radius: 10px;
 }
-.login-modal .input-field:focus{
+
+.login-modal .input-field:focus {
 	outline: none;
 	border-bottom: 2.5px solid rgb(129, 161, 39);
 	box-shadow: 0 10px 20px rgb(0, 0, 0, .1);
 }
 
-.login-modal .input-field:focus:invalid{
+.login-modal .input-field:focus:invalid {
 	border-bottom: 2.5px solid rgb(212, 33, 33);
 }
 
-.login-modal .submit-btn{
-	width:85%;
+.login-modal .submit-btn {
+	width: 85%;
 	top: 400px;
 	padding: 5px 30px;
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background:skyblue;
-	border:0;
-	outline:none;
+	background: skyblue;
+	border: 0;
+	outline: none;
 	margin-left: 18px;
 	border-radius: 15px;
 	transition: all .2s;
 }
-.login-modal .submit-btn:hover{
-	background:rgb(64, 125, 206);
+
+.login-modal .submit-btn:hover {
+	background: rgb(64, 125, 206);
 	transform: translateY(-5px) scale(1.05);
 	box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
 }
 
-.login-modal .submit-btn:active{
+.login-modal .submit-btn:active {
 	transform: translateY(-1px) scale(1.05);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
 
-.login-modal .check-box{
-	margin:30px 8px 36px 3px;
-	font-family: serif ;
+.login-modal .check-box {
+	margin: 30px 8px 36px 3px;
+	font-family: serif;
 	font-weight: 600px;
 }
-.login-modal span{
+
+.login-modal span {
 	color: #000;
-	font-size:15px;
-	bottom:66px;
+	font-size: 15px;
+	bottom: 66px;
 	position: absolute;
 }
-.login-modal #login{
-	left:50px;
+
+.login-modal #login {
+	left: 50px;
 }
-.login-modal #register{
-	left:450px;
+
+.login-modal #register {
+	left: 450px;
 }
-.login-modal .submit-button{
-	width:85%;
+
+.login-modal .submit-button {
+	width: 85%;
 	padding: 5px 30px;
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background:skyblue;
-	border:0;
-	outline:none;
+	background: skyblue;
+	border: 0;
+	outline: none;
 	border-radius: 15px;
-	margin-top:20px;
-	margin-left:20px;
+	margin-top: 20px;
+	margin-left: 20px;
 	transition: all .2s
 }
 
-.login-modal .submit-button:hover{
-	background:rgb(64, 125, 206);
+.login-modal .submit-button:hover {
+	background: rgb(64, 125, 206);
 	transform: translateY(-5px) scale(1.05);
 	box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
 }
 
-.login-modal .submit-button:active{
+.login-modal .submit-button:active {
 	transform: translateY(-1px) scale(1.05);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
 }
-.login-modal .close{
+
+.login-modal .close {
 	position: absolute;
 	right: 16px;
 	top: 8px;
 	cursor: pointer;
 	font-size: 30px;
-	font-weight:bold;
+	font-weight: bold;
 	transition: all 200ms;
 	font-size: 20px;
 	text-decoration: none;
-	color:black;
+	color: black;
 }
-.login-modal .close:hover{
-	 color: black;
+
+.login-modal .close:hover {
+	color: black;
 }
