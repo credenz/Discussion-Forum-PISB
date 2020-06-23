@@ -1,17 +1,19 @@
-
-body{
+body {
     font-family: inherit;
     font-size: inherit;
     line-height: 1.6;
-    
+
 }
-.brdr{
-    border: 2px solid red;
+
+.brdr {
+    border: 1px solid red;
 }
-.main-cont{
+
+.main-cont {
     margin-top: 60px;
 }
-.back{
+
+.back {
     margin: 3vw;
     width: 20vw;
     height: 4vw;
@@ -23,74 +25,82 @@ body{
     color: white;
 }
 
-.m-card{
-    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
-    height: fit-content; 
+.m-card {
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    height: fit-content;
     background: #050d4e;
     color: white;
     border-radius: 10px;
 }
-.answer-card{
+
+.answer-card {
     margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
-    height:fit-content;
-   
-    background: #050d4e;
-    color: white;
-    border-radius: 10px;
-}
-
-.people-card{
-    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
-    
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
     height: fit-content;
-    
+
     background: #050d4e;
     color: white;
-    
     border-radius: 10px;
 }
 
-.card-body{
+.people-card {
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+
+    height: fit-content;
+
+    background: #050d4e;
+    color: white;
+
+    border-radius: 10px;
+}
+
+.card-body {
     color: black;
 }
-.people{
-  
-   
-}
 
-.back:hover{
+.people {}
+
+.back:hover {
     box-shadow: 3px 3px 5px grey;
 }
 
-.profile-name{
+.profile-name {
     margin-left: 50px;
     font-weight: 700;
 }
-.ansprofile-name{
+
+.ansprofile-name {
     margin-left: 50px;
     font-weight: 600;
 }
-.profile-description{
-   
+
+.profile-description {
+
     font-weight: 300;
 }
-.profile-sidebar{
+
+.profile-sidebar {
     text-align: center;
 }
-.domain{
+
+.domain {
     margin-top: 20px;
     border: 1px solid #fff;
-    border-radius:5px;
+    border-radius: 5px;
     padding: 5px;
     font-size: small;
 }
 
-.profile-image{
+.profile-image {
     border-radius: 50%;
+    margin: auto;
+    width: 5vw;
+
 }
-.auth-name{
-    margin-top: 10px;
+
+.auth-name {
+    /* margin-top: 10px; */
     font-size: medium;
+    text-align: center;
 }
