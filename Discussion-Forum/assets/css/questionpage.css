@@ -58,12 +58,10 @@ body {
 
 .people-card {
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-
     height: fit-content;
-    
+    margin-top: 1.5vw;
     background: #050d4e;
     color: white;
-    margin-top: 1vw;
     border-radius: 1vw;
 }
 
