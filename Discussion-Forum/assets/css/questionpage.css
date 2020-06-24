@@ -1,17 +1,19 @@
-
-body{
+body {
     font-family: inherit;
     font-size: inherit;
     line-height: 1.6;
-    
+
 }
-.brdr{
+
+.brdr {
     border: 2px solid red;
 }
-.main-cont{
-    margin-top: 4.6vw;
+
+.main-cont {
+    margin-top: 65px;
 }
-.back{
+
+.back {
     margin: 3vw;
     width: 20vw;
     height: 4vw;
@@ -23,88 +25,106 @@ body{
     color: white;
 }
 
-.m-card{
-    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
-    height: fit-content; 
+.m-card {
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    height: fit-content;
     background: #050d4e;
     color: white;
     border-radius: 1vw;
     padding: 0.5vw;
 }
-.answer-card{
+
+.answer-card {
     margin-top: 3vw;
     margin-bottom: 3vw;
-    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
-    height:fit-content;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    height: fit-content;
     padding: 0.5vw;
     background: #050d4e;
     color: white;
     border-radius: 1vw;
 }
-.like{
-    font-size: 1.1vw; 
-    border-radius:1vw;
-    background: #050d4e ;
+
+.like {
+    font-size: 1.1vw;
+    border-radius: 1vw;
+    background: #050d4e;
     color: aliceblue;
 }
-.people-card{
-    box-shadow:  0 0 2em rgba(0, 0, 0, 0.5);
-    
+
+.people-card {
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+
     height: fit-content;
-    
+
     background: #050d4e;
     color: white;
-    
+
     border-radius: 1vw;
 }
 
 
-.people{
-  
-   
+.people {}
+
+.quest {
+    width: 100%;
+    text-align: left;
+    color: white;
 }
-.quest{
-    width: 100%; 
-    text-align: left; 
-    color: aliceblue;
+
+.btn:hover {
+    color: white;
 }
-.back:hover{
-    box-shadow: 3px 3px 5px grey;
+
+.paa-ans {
+    color: teal;
 }
-.like:hover{
+
+.back:hover {
     box-shadow: 3px 3px 5px grey;
 }
 
-.profile-name{
-   
-    font-weight: 700;
+.like:hover {
+    box-shadow: 3px 3px 5px grey;
 }
-.ansprofile-name{
-    
+
+.profile-name {
+
+    font-weight: 700;
+    align-self: flex-start;
+    padding-top: 1.5vw;
+}
+
+.ansprofile-name {
+
     font-weight: 500;
 }
-.profile-description{
-   
+
+.profile-description {
+
     font-weight: 200;
 }
-.profile-sidebar{
+
+.profile-sidebar {
     text-align: center;
 }
-.domain{
+
+.domain {
     margin-top: 2vw;
     border: 0.1vw solid #fff;
-    border-radius:0.5vw;
+    border-radius: 0.5vw;
     padding: 0.45vw;
     font-size: small;
 }
 
-.profile-image{
+.profile-image {
     border-radius: 50%;
     height: 6vw;
     width: 6vw;
 }
-.auth-name{
-   
+
+.auth-name {
+
     margin-top: 0.5vw;
-  
+
 }
