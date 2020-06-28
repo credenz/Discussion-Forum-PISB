@@ -1,0 +1,144 @@
+body {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.6;
+
+}
+
+.brdr {
+    border: 0px solid red;
+}
+
+.main-cont {
+    margin-top: 65px;
+}
+
+.back {
+    margin: 3vw;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5vw;
+    border: none;
+    padding: 0.5vw;
+    outline: none;
+    border-radius: 1vw;
+    background: #050d4e;
+    color: white;
+}
+
+.m-card {
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    background: #050d4e;
+    color: white;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    padding-bottom: 1vw;
+}
+
+.answer-card {
+    margin-top: 3vw;
+    margin-bottom: 10vw;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    padding: 0.5vw;
+    padding-bottom: 1vw;
+    background: #050d4e;
+    color: white;
+    border-radius: 1vw;
+}
+
+.like {
+    font-size: 1.1vw;
+    border: none;
+    border-radius: 1vw;
+    background: #050d4e;
+    color: aliceblue;
+}
+
+.people-card {
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    margin-top: 1.5vw;
+    background: #050d4e;
+    color: white;
+    border-radius: 1vw;
+}
+
+
+.people {
+    font-size: 2.5vw;
+}
+
+.quest {
+    width: 100%;
+    text-align: left;
+    font-size: 1.4vw;
+    color: white;
+    
+}
+
+.btn:hover {
+    color: white;
+}
+
+.paa-ans {
+    color: teal;
+    font-size: 1.4vw;
+}
+
+.back:hover {
+    box-shadow: 3px 3px 5px grey;
+}
+
+.like:hover {
+    box-shadow: 3px 3px 5px grey;
+}
+
+.profile-name {
+    font-size: 1.3vw;
+    font-weight: 700;
+    align-self: flex-start;
+    padding-top: 1.5vw;
+}
+
+.ansprofile-name {
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+.profile-description {
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+
+.profile-sidebar {
+    text-align: center;
+}
+
+.domain {
+    margin-top: 2vw;
+    border: 0.1vw solid #fff;
+    border-radius: 0.5vw;
+    padding: 0.45vw;
+    font-size: 1.2vw;
+}
+.time{
+    margin-left: 25vw;
+    font-size: 1.2vw;
+}
+.ans-time{
+    margin-left: 20vw;
+    font-size: 1.2vw;
+}
+.profile-image {
+    border-radius: 50%;
+    height: 4vw;
+    width: 4vw;
+}
+
+.auth-name {
+
+    margin-top: 0.5vw;
+    font-size: 1.5vw;
+}
