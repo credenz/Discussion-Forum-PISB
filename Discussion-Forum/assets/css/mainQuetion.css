@@ -1,5 +1,7 @@
 .quetion{
 	width: 100%;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 	margin: 2vw 0 8vw 0;
 	box-shadow: 0 1vw 2vw rgba(0,0,0,.2);
@@ -30,6 +32,8 @@
 }
 
 .que-box{
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
 	width: 100%;
 }
@@ -41,6 +45,8 @@
     margin-left: 5%;
     margin-bottom: 1.6vw;
     padding-top: 1vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -48,6 +54,8 @@
 	width: 94%;
     margin-left: 5%;
     margin-bottom: 1.6vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -71,7 +79,11 @@
 
 .domain{
 	display: block;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
 	height: fit-content;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
 	width: fit-content;
 	border: .15vw solid #ffffff;
 	margin-bottom: 4vw;

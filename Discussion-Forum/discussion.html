@@ -34,6 +34,7 @@
     <!-- custom css1 -->
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/mainQuetion.css">
+    <link rel="stylesheet" href="assets/css/askQuestion.css">
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
@@ -181,6 +182,44 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div class="container askQuestion">
+        <div class="row">
+            <h2 class="title-box">
+                Ask a Question
+            </h2>
+        </div>
+        <div class="row category">
+            <div class="col-3">
+                <select name="category" id="category" class="dropdown-category">
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="web">Web Develpment</option>
+                    <option value="machine" selected>Machine Learning</option>
+                    <option value="compete">Competitive Programing</option>
+                </select>
+            </div>
+            <div class="col-3 offset-6">
+                <span class="image-icon">
+                    <button class="btn btn-primary">
+                        <i class="fa fa-image fa-lg"></i>
+                        Add Image
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <input type="text" name="title" id="title" class="title-text" placeholder="  Title">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <textarea type="text" name="title" id="title" class="title-description" placeholder="  Description"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-primary submit">POST</button>
+        </div>
     </div>
     <div class="container">
         <div class="quetion">
