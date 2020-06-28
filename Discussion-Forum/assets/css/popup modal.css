@@ -1,21 +1,29 @@
+.brdr{
+	border:2px solid red;
+}
+.main-cntnr{
+	margin-top: 60px;
+}
+
+
 body .search-box{
-	top: 18%;
-	left:250px;
+	/*top: 18%;
+	left:250px;*/
 	z-index: 1;
 }
 .search-box{
-	position: absolute;
-	left: 70%;
-	transform: translate(-50%,-50%);
+	/*position:absolute;
+	left: 70%;*/
+	margin:auto;
 	background:white;
-	height:52px;
 	border-radius: 50px;
 	padding: 6px;
-	border:2px solid #142850
+	border:2px solid #142850;
+	height:3.5vw;
 }
 ::-webkit-input-placeholder{
 	color:black;
-	font-size: 20px;
+	font-size: 1.7vw;
 }
 ::-ms-input-placeholder{
 	color:black;
@@ -24,9 +32,9 @@ body .search-box{
 	color:black;
 }
 .search-btn{
-	padding-left: 1.5px;
-	padding-bottom:2.5px;
-	margin-top: 2px ;
+	padding-left: 9px;
+	padding-top:4px;
+	margin-top: 1px ;
 	margin-right: 10px;
 	color:white;
 	float:right;
@@ -34,7 +42,6 @@ body .search-box{
 	height:33px;
 	border-radius: 50%;
 	background:#142850;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
@@ -46,15 +53,12 @@ body .search-box{
 	margin-left:15px;
 	float: left;
 	color:#142850;
-	font-size: 20px;
+	font-size: 1.7vw;
 	transition: 0.4s;
 	line-height: 30px;
-	width: 380px;
 	text-decoration: none;
 }
 body select{
-	display: flex;
-	flex-direction:row;
 	justify-content: center;
 	align-items: center;
 	-webkit-appearance:none;
@@ -65,8 +69,6 @@ body select{
 	border:0!important;
 	background:white;
 	background-image: none;
-	flex:1;
-	padding-left:20px;
 	color:black;
 	cursor: pointer;
 	text-align: center;
@@ -75,19 +77,17 @@ body select{
 }
 .select{
 	z-index: 1;
-	position: absolute;
-	display: flex;
-	width:23vw;
-	height:7.8vh;
-	line-height: 2;
+	/*position: absolute;*/
+	line-height: 2.1;
 	background:white;
 	border-radius: 10px;
-	left:37%;
+	/*left:37%;*/
 	overflow: hidden;
 	text-align: center;
-	top: 14vh;
+	/*top: 14vh;*/
 	border:2px solid #142850;
 	cursor: pointer;
+	height:3.5vw;
 }
 .select:hover{
 	box-shadow: 0 5px 5px 0 grey;
@@ -95,14 +95,14 @@ body select{
 .select::after{
 	content:'\25BC';
 	position: relative;;
-	top:9px;
-	right: 0;
-	padding-right:1em;
+	top:6px;
+	float:right;
+	padding-right: 1em;
 	background:white;
 	cursor: pointer;
 	pointer-events: none;
 	transition: 0.25s all ease;
-	font-size: 17px;
+	font-size: 18px;
 	color:black
 }
 .select:hover::after{
@@ -111,17 +111,16 @@ body select{
 }
 .trending{
 	z-index: 1;
-	position: absolute;
+	/*position: absolute;
 	top: 14%;
-	left: 62%;
-	transform: translate(-50%,-50%);
+	left: 62%;*/
+	height:3.5vw;
+
 }
 a.trend{
-	position: absolute;
+	/*position: absolute;*/
 	text-align: center;
 	justify-content: center;
-	width: 180px;
-	height: 51px;
 	padding-top: 8px;
 	font-size: 20px;
 	color:black;
@@ -137,13 +136,13 @@ a.trend:hover{
 }
 .askq{
 	z-index: 1;
-	position: absolute;
+	/*position: absolute;
 	top: 14%;
-	left: 77%;
-	transform: translate(-50%,-50%);
+	left: 77%;*/
+	
 }
 a.ask{
-	position: absolute;
+	/*position: absolute;*/
 	text-align: center;
 	justify-content: center;
 	width: 280px;
@@ -161,4 +160,7 @@ a.ask{
 a.ask:hover{
 	box-shadow: 0 5px 5px 0 grey;
 }
+
+
+  
 
