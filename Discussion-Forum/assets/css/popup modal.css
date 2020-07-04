@@ -79,6 +79,14 @@ body select {
 	cursor: pointer;
 	height: 3.5vw;
 }
+.year-dropdown__selected{
+	border:2px solid #142850;
+	border-radius: 15px;
+}
+.row-2{
+	padding-top:1vw;
+	padding-right: 1vw;
+}
 
 
 
@@ -103,10 +111,6 @@ a.trend {
 	display: flex;
 	border: 2px solid #142850;
 }
-
-
-
-
 a.ask {
 	/*position: absolute;*/
 	/* text-align: center; */
@@ -124,7 +128,6 @@ a.ask {
 	text-underline-position: none;
 	text-decoration: none;
 }
-
 a.ask p {
 	margin: auto;
 }
