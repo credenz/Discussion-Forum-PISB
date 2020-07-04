@@ -2,6 +2,11 @@
 	height: 30vh;
 }
 
+.quetion a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .quetion {
 	z-index: 1;
 	width: 100%;

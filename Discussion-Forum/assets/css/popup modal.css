@@ -1,166 +1,130 @@
-.brdr{
-	border:2px solid red;
+.brdr {
+	/* border: 2px solid red; */
 }
-.main-cntnr{
+
+.main-cntnr {
 	margin-top: 60px;
 }
 
 
-body .search-box{
-	/*top: 18%;
-	left:250px;*/
-	z-index: 1;
-}
-.search-box{
-	/*position:absolute;
-	left: 70%;*/
-	margin:auto;
-	background:white;
+
+.search-box {
+
+	margin: auto;
+	background: white;
 	border-radius: 50px;
-	padding: 6px;
-	border:2px solid #142850;
-	height:3.5vw;
+	padding: 0.7vw;
+	border: 2px solid #142850;
+	height: 3.5vw;
+	font-size: 1.5vw;
 }
-::-webkit-input-placeholder{
-	color:black;
-	font-size: 1.7vw;
+
+::-webkit-input-placeholder {
+	color: black;
+	/* font-size: 1.7vw; */
 }
-::-ms-input-placeholder{
-	color:black;
+
+::-ms-input-placeholder {
+	color: black;
 }
-::-moz-input-placeholder{
-	color:black;
+
+::-moz-input-placeholder {
+	color: black;
 }
-.search-btn{
-	padding-left: 9px;
-	padding-top:4px;
-	margin-top: 1px ;
-	margin-right: 10px;
-	color:white;
-	float:right;
-	width:33px;
-	height:33px;
+
+.search-btn {
+
 	border-radius: 50%;
-	background:#142850;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
+	background: #142850;
+	font-size: 1.5vw;
+	margin-left: auto;
+	padding: 0.5vw;
 }
-.search-txt{
-	border:none;
-	background:none;
-	outline:none;
-	margin-left:15px;
-	float: left;
-	color:#142850;
-	font-size: 1.7vw;
+
+.search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	margin-left: 1vw;
+	margin-right: auto;
+	color: #142850;
 	transition: 0.4s;
-	line-height: 30px;
 	text-decoration: none;
 }
-body select{
-	justify-content: center;
-	align-items: center;
-	-webkit-appearance:none;
-	-ms-appearance:none;
-	appearance:none;
-	outline:0;
+
+body select {
+	width: 95%;
+	outline: none;
+	padding: 0.5vw;
 	box-shadow: none;
-	border:0!important;
-	background:white;
+	background: white;
 	background-image: none;
-	color:black;
+	color: black;
 	cursor: pointer;
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 1.7vw;
 	cursor: pointer;
 }
-.select{
+
+.select {
 	z-index: 1;
 	/*position: absolute;*/
-	line-height: 2.1;
-	background:white;
+	/* line-height: 2.1; */
+	background: white;
 	border-radius: 10px;
 	/*left:37%;*/
-	overflow: hidden;
 	text-align: center;
 	/*top: 14vh;*/
-	border:2px solid #142850;
+	border: 2px solid #142850;
 	cursor: pointer;
-	height:3.5vw;
+	height: 3.5vw;
 }
-.select:hover{
-	box-shadow: 0 5px 5px 0 grey;
-}
-.select::after{
-	content:'\25BC';
-	position: relative;;
-	top:6px;
-	float:right;
-	padding-right: 1em;
-	background:white;
-	cursor: pointer;
-	pointer-events: none;
-	transition: 0.25s all ease;
-	font-size: 18px;
-	color:black
-}
-.select:hover::after{
-	color:#142850;
-	cursor: pointer;
-}
-.trending{
-	z-index: 1;
-	/*position: absolute;
-	top: 14%;
-	left: 62%;*/
-	height:3.5vw;
 
-}
-a.trend{
-	/*position: absolute;*/
+
+
+.trending {}
+
+a.trend {
+	z-index: 1;
+
+	line-height: 3.5vw;
+	height: 3.5vw;
+	width: 100%;
 	text-align: center;
 	justify-content: center;
-	padding-top: 8px;
-	font-size: 20px;
-	color:black;
-	border-radius:10px;
-	background:white;
+	/* padding: 8px; */
+	font-size: 1.5vw;
+	color: black;
+	border-radius: 10px;
+	background: white;
 	cursor: pointer;
 	text-underline-position: none;
 	text-decoration: none;
-	border:2px solid #142850;
+	display: flex;
+	border: 2px solid #142850;
 }
-a.trend:hover{
-	box-shadow: 0 5px 5px 0 grey ;
-}
-.askq{
-	z-index: 1;
-	/*position: absolute;
-	top: 14%;
-	left: 77%;*/
-	
-}
-a.ask{
+
+
+
+
+a.ask {
 	/*position: absolute;*/
-	text-align: center;
+	/* text-align: center; */
 	justify-content: center;
-	width: 280px;
-	height: 51px;
-	padding-top: 8px;
-	font-size: 20px;
-	color:black;
-	border:2px solid #142852;
-	border-radius:10px;
-	background:white;
+	width: 80%;
+	height: 3.5vw;
+	display: flex;
+	/* padding-top: 8px; */
+	font-size: 1.5vw;
+	color: black;
+	border: 2px solid #142852;
+	border-radius: 10px;
+	background: white;
 	cursor: pointer;
 	text-underline-position: none;
 	text-decoration: none;
 }
-a.ask:hover{
-	box-shadow: 0 5px 5px 0 grey;
+
+a.ask p {
+	margin: auto;
 }
-
-
-  
-
