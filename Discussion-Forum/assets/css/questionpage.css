@@ -1,6 +1,5 @@
 body {
     font-family: inherit;
-    font-size: inherit;
     line-height: 1.6;
 
 }
@@ -15,42 +14,33 @@ body {
 
 .back {
     margin: 3vw;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    font-size: 1.5vw;
+    font-size:16.5px;
     border: none;
-    padding: 0.5vw;
     outline: none;
     border-radius: 1vw;
     background: #050d4e;
     color: white;
+    padding-left:1.2vw;
+    padding-right:1.2vw;
+    padding-top:0.8vw;
+    padding-bottom:0.8vw;
+
 }
 
 .m-card {
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     background: #050d4e;
     color: white;
     border-radius: 1vw;
-    padding: 0.5vw;
-    padding-bottom: 1vw;
+    padding-bottom: 2vw;
 }
 
 .answer-card {
     margin-top: 3vw;
     margin-bottom: 10vw;
+    margin-left:7.2vw;
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 0.5vw;
-    padding-bottom: 1vw;
+    padding-bottom: 2vw;
     background: #050d4e;
     color: white;
     border-radius: 1vw;
@@ -79,9 +69,6 @@ body {
 
 .people-card {
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     margin-top: 1.5vw;
     background: #050d4e;
     color: white;

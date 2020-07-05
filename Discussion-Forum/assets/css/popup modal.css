@@ -79,13 +79,6 @@ body select {
 	cursor: pointer;
 	height: 3.5vw;
 }
-
-.row-2 {
-	padding-top: 1vw;
-}
-
-
-
 a.trend {
 	z-index: 1;
 
@@ -157,9 +150,9 @@ a.ask p {
 	/* margin: auto; */
 }
 
-/*.brdr {
+.brdr {
 	border: 2px solid red;
-}*/
+}
 
 .year-dropdown__selected {
 	position: relative;
@@ -171,9 +164,10 @@ a.ask p {
 	border-radius: 15px;
 	pointer-events: auto;
 	border: 2px solid #142850;
-	/* top: 5vh; */
-	/* height: 3.8vw; */
+	
+	 height: 3.8vw; 
 	/* line-height: 0.5vw; */
+	margin-bottom:12vw;
 }
 
 
@@ -220,9 +214,9 @@ a.ask p {
 
 .year-dropdown__options {
 
-	display: block;
+	display: none;
 	border: 2px solid #142850;
-	
+	z-index:0;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -232,7 +226,7 @@ a.ask p {
 	/* filter: brightness(0.95); */
 	pointer-events: none;
 	transform: translateY(-100%);
-	top: 5vh;
+	overflow:hidden;
 }
 
 .year-dropdown__options li {
