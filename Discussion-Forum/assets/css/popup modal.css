@@ -169,6 +169,9 @@ a.ask p {
 	height: 3.5vw;
 	font-size: 1.5vw;
 	width: 100%;
+	padding: 1vw;
+	/* transition: all 0.3s; */
+
 
 	/* padding: 1vw 2vw; */
 
@@ -176,12 +179,12 @@ a.ask p {
 }
 
 .dropdown.domains {
-	width: 80%;
+	width: 95%;
 
 }
 
 .dropdown-toggle.domains-drop::after {
-	margin-left: 7vw;
+	margin-left: auto;
 }
 
 .domains-drop:hover {

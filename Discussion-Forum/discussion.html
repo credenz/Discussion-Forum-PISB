@@ -206,18 +206,27 @@
                         <a class="domains-drop dropdown-toggle d-flex justify-content-center align-items-center text-align-center "
                             href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            Domains
+                            <span class="qwe">Domains</span>
+
                         </a>
                         <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Machine Learning </a>
-                            <a class="dropdown-item" href="#">Artificial Intelligence</a>
-                            <a class="dropdown-item" href="#">Competitive Programming</a>
-                            <a class="dropdown-item" href="#">App Develpment</a>
-                            <a class="dropdown-item" href="#">Web Develpment</a>
-                            <a class="dropdown-item" href="#">Iot & Robotics</a>
-                            <a class="dropdown-item" href="#">Digital Design</a>
+                            <a class="domains-drop-ops dropdown-item" href="#"><span>Machine Learning </span></a>
+                            <a class="domains-drop-ops dropdown-item" href="#"><span>Artificial Intelligence</span></a>
+                            <a class="domains-drop-ops dropdown-item" href="#"><span>Competitive Programming</span></a>
+                            <a class="domains-drop-ops dropdown-item" href="#"><span>App Development</span></a>
+                            <a class="domains-drop-ops dropdown-item" href="#"><span>Web Development</span></a>
+                            <a class="domains-drop-ops dropdown-item" href="#"><span>Iot & Robotics</span></a>
+                            <a class="domains-drop-ops dropdown-item" href="#"><span>Digital Design</span></a>
                         </div>
                     </div>
+                    <script>
+                        document.querySelectorAll(".domains-drop-ops.dropdown-item").forEach((option) => {
+                            let text = option.innerHTML;
+                            option.addEventListener("click", function () {
+                                document.querySelector(".domains-drop").innerHTML = text;
+                            })
+                        })
+                    </script>
 
                 </div>
                 <div class="col-2 brdr d-flex align-items-center justify-content-center text-align-center">
