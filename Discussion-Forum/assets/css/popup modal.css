@@ -1,6 +1,6 @@
-.brdr {
-	/* border: 2px solid red; */
-}
+/*.brdr {
+	 border: 2px solid red; 
+}*/
 
 .main-cntnr {
 	margin-top: 60px;
@@ -84,7 +84,7 @@ body select {
 	padding-top: 1vw;
 }
 
-.trending {}
+
 
 a.trend {
 	z-index: 1;
@@ -97,7 +97,7 @@ a.trend {
 	/* padding: 8px; */
 	font-size: 1.5vw;
 	color: black;
-	border-radius: 10px;
+	border-radius: 15px;
 	background: white;
 	cursor: pointer;
 	text-underline-position: none;
@@ -111,17 +111,19 @@ a.ask {
 	/* text-align: center; */
 	justify-content: center;
 	width: 80%;
-	height: 3.5vw;
+	height: 3.3vw;
 	display: flex;
 	/* padding-top: 8px; */
 	font-size: 1.5vw;
 	color: black;
 	border: 2px solid #142852;
-	border-radius: 10px;
+	border-radius: 15px;
 	background: white;
 	cursor: pointer;
 	text-underline-position: none;
 	text-decoration: none;
+	margin-left: -4vw;
+	
 }
 
 a.ask p {
@@ -150,24 +152,23 @@ a.ask p {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	/* margin-top: 5vw; */
-	-webkit-transform: rotate(0) translateY(25%) translateZ(0);
+	margin-top: 4vw; 
 	transform: rotate(0) translateY(25%) translateZ(0);
 	/* margin: auto; */
 }
 
-.brdr {
+/*.brdr {
 	border: 2px solid red;
-}
+}*/
 
 .year-dropdown__selected {
 	position: relative;
 	/* width:250px; */
-	z-index: 1;
-	padding: 21.6px 0 21.6px 28.8px;
+	z-index: 999;
+	padding: 17px;
 	/* font-size: 100%; */
 	background: white;
-	border-radius: 16px;
+	border-radius: 15px;
 	pointer-events: auto;
 	border: 2px solid #142850;
 	/* top: 5vh; */
@@ -186,9 +187,7 @@ a.ask p {
 	height: 50%;
 	/* background: white; */
 	border-radius: 16px 16px 0 0;
-	-webkit-transform: scaleY(0);
 	transform: scaleY(0);
-	-webkit-transform-origin: top;
 	transform-origin: top;
 }
 
@@ -197,7 +196,6 @@ a.ask p {
 	color: transparent;
 	overflow: hidden;
 	line-height: 1.5;
-	-webkit-transform: translateY(-83%);
 	transform: translateY(-83%);
 }
 
@@ -224,7 +222,7 @@ a.ask p {
 
 	display: block;
 	border: 2px solid #142850;
-
+	
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -233,7 +231,6 @@ a.ask p {
 	/* -webkit-filter: brightness(0.95); */
 	/* filter: brightness(0.95); */
 	pointer-events: none;
-	-webkit-transform: translateY(-100%);
 	transform: translateY(-100%);
 	top: 5vh;
 }
@@ -275,7 +272,6 @@ a.ask p {
 }
 
 .year-dropdown.year-close .year-dropdown__selected::before {
-	-webkit-transform: scaleY(1);
 	transform: scaleY(1);
 	-webkit-animation: hide-border 0.3s 0.4s forwards;
 	animation: hide-border 0.3s 0.4s forwards;
@@ -303,56 +299,48 @@ a.ask p {
 
 @-webkit-keyframes reveal-border {
 	to {
-		-webkit-transform: scaleY(1);
 		transform: scaleY(1);
 	}
 }
 
 @keyframes reveal-border {
 	to {
-		-webkit-transform: scaleY(1);
 		transform: scaleY(1);
 	}
 }
 
 @-webkit-keyframes flip-up {
 	to {
-		-webkit-transform: scaleY(-1);
 		transform: scaleY(-1);
 	}
 }
 
 @keyframes flip-up {
 	to {
-		-webkit-transform: scaleY(-1);
 		transform: scaleY(-1);
 	}
 }
 
 @-webkit-keyframes slide-down {
 	to {
-		-webkit-transform: translateY(-5%);
 		transform: translateY(-5%);
 	}
 }
 
 @keyframes slide-down {
 	to {
-		-webkit-transform: translateY(-5%);
 		transform: translateY(-5%);
 	}
 }
 
 @-webkit-keyframes hide-border {
 	to {
-		-webkit-transform: scaleY(0);
 		transform: scaleY(0);
 	}
 }
 
 @keyframes hide-border {
 	to {
-		-webkit-transform: scaleY(0);
 		transform: scaleY(0);
 	}
 }
@@ -372,13 +360,11 @@ a.ask p {
 @-webkit-keyframes fade-up-in {
 	from {
 		opacity: 1;
-		-webkit-transform: translateY(100%);
 		transform: translateY(100%);
 	}
 
 	to {
 		opacity: 1;
-		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
@@ -386,61 +372,51 @@ a.ask p {
 @keyframes fade-up-in {
 	from {
 		opacity: 1;
-		-webkit-transform: translateY(100%);
 		transform: translateY(100%);
 	}
 
 	to {
 		opacity: 1;
-		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
 
 @-webkit-keyframes flip-down {
 	from {
-		-webkit-transform: scaleY(-1);
 		transform: scaleY(-1);
 	}
 
 	to {
-		-webkit-transform: scaleY(1);
 		transform: scaleY(1);
 	}
 }
 
 @keyframes flip-down {
 	from {
-		-webkit-transform: scaleY(-1);
 		transform: scaleY(-1);
 	}
 
 	to {
-		-webkit-transform: scaleY(1);
 		transform: scaleY(1);
 	}
 }
 
 @-webkit-keyframes slide-up {
 	from {
-		-webkit-transform: translateY(-2%);
 		transform: translateY(-2%);
 	}
 
 	to {
-		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
 	}
 }
 
 @keyframes slide-up {
 	from {
-		-webkit-transform: translateY(-2%);
 		transform: translateY(-2%);
 	}
 
 	to {
-		-webkit-transform: translateY(-100%);
 		transform: translateY(-100%);
 	}
 }

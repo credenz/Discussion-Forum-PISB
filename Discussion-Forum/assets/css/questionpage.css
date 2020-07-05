@@ -62,6 +62,19 @@ body {
     border-radius: 1vw;
     background: #050d4e;
     color: aliceblue;
+    margin-left: 2vw;
+}
+
+.m-left-1{
+    margin-left: 1vw;
+}
+
+.m-left-2{
+    margin-left: 3vw;
+}
+
+.answer .like{
+    margin: 0vw;
 }
 
 .people-card {
@@ -109,7 +122,8 @@ body {
     font-size: 1.3vw;
     font-weight: 700;
     align-self: flex-start;
-    padding-top: 1.5vw;
+    padding-top: 3vw;
+    padding-left: 3vw;
 }
 
 .ansprofile-name {
@@ -120,6 +134,7 @@ body {
 .profile-description {
     font-size: 1.2vw;
     font-weight: 200;
+    margin: -3vw 0 2vw 2vw;
 }
 
 .profile-sidebar {
@@ -127,14 +142,18 @@ body {
 }
 
 .domain {
-    margin-top: 2vw;
+    margin-top: 2.5vw;
     border: 0.1vw solid #fff;
     border-radius: 0.5vw;
-    padding: 0.45vw;
-    font-size: 1.2vw;
+    padding: 0.35vw;
+    font-size: 1vw;
+    width: 90%;
+    text-align: center;
+    margin-left: 1vw;
+
 }
 .time{
-    margin-left: 25vw;
+    margin-left: 22vw;
     font-size: 1.2vw;
 }
 .ans-time{
@@ -149,6 +168,10 @@ body {
 
 .auth-name {
 
-    margin-top: 0.5vw;
+    margin-top: 1.5vw;
     font-size: 1.5vw;
+}
+
+.pt-2{
+    margin-top: 2vw;
 }

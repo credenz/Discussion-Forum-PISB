@@ -1,8 +1,11 @@
-/* .askQuestion{
+.askQuestion{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: auto;
     margin-bottom: 10vw;
-    box-shadow: 0 1vw 2vw rgba(0,0,0,.2);
+    box-shadow: 0 1vw 2vw rgba(0,0,0,.5);
+    border-radius: 1vw;
     font-family: inherit;
     color: #142850;
 }
@@ -54,4 +57,4 @@
 
 .submit{
     margin: 1vw auto;
-} */
+} 
