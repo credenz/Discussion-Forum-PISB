@@ -79,6 +79,7 @@ body select {
 	cursor: pointer;
 	height: 3.5vw;
 }
+
 a.trend {
 	z-index: 1;
 
@@ -116,301 +117,76 @@ a.ask {
 	text-underline-position: none;
 	text-decoration: none;
 	margin-left: -4vw;
-	
+
 }
 
 a.ask p {
 	margin: auto;
 }
 
-.year-parent {
-	z-index: 0;
-	height: 3.5vw;
-	margin: auto;
+
+@media (min-width: 992px) {
+	.animate {
+		animation-duration: 0.3s;
+		-webkit-animation-duration: 0.3s;
+		animation-fill-mode: both;
+		-webkit-animation-fill-mode: both;
+	}
 }
 
-.year-dropdown {
-	--arrow-color: black;
-	--ease-in-out-quartic: cubic-bezier(0.77, 0, 0.175, 1);
-	line-height: 1;
-	pointer-events: none;
+@keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
 
-	background: transparent;
-	border-radius: 16px 16px 0 0;
-	cursor: pointer;
-	/* -webkit-filter: drop-shadow(0 60px 50px rgba(0, 0, 0, 0.15));
-	filter: drop-shadow(0 60px 50px rgba(0, 0, 0, 0.15)); */
-	overflow: hidden;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	margin-top: 4vw; 
-	transform: rotate(0) translateY(25%) translateZ(0);
-	/* margin: auto; */
+	100% {
+		transform: translateY();
+		opacity: 1;
+	}
+
+
+}
+
+
+.slideIn {
+	animation-name: slideIn;
 }
 
 .brdr {
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
 
-.year-dropdown__selected {
-	position: relative;
-	/* width:250px; */
-	z-index: 999;
-	padding: 17px;
-	/* font-size: 100%; */
-	background: white;
-	border-radius: 15px;
-	pointer-events: auto;
+.top-sec-row {
+	margin-top: 7vw;
+}
+
+
+.domains-drop {
 	border: 2px solid #142850;
-	
-	 height: 3.8vw; 
-	/* line-height: 0.5vw; */
-	margin-bottom:12vw;
-}
-
-
-.year-dropdown__selected::before {
-	position: absolute;
-	content: "";
-	top: 50%;
-	left: 0;
-	z-index: -1;
+	border-radius: 16px 16px;
+	color: #142850;
+	height: 3.5vw;
+	font-size: 1.5vw;
 	width: 100%;
-	height: 50%;
-	/* background: white; */
-	border-radius: 16px 16px 0 0;
-	transform: scaleY(0);
-	transform-origin: top;
+
+	/* padding: 1vw 2vw; */
+
+
 }
 
-.year-dropdown__selected .year-new-text {
-	position: absolute;
-	color: transparent;
-	overflow: hidden;
-	line-height: 1.5;
-	transform: translateY(-83%);
+.dropdown.domains {
+	width: 80%;
+
 }
 
-.year-dropdown__selected .year-new-text::before {
-	position: absolute;
-	content: 'attr(data-text)';
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	color: black;
-	opacity: 0;
-	white-space: nowrap;
+.dropdown-toggle.domains-drop::after {
+	margin-left: 7vw;
 }
 
-.year-dropdown__selected .year-chevron {
-	position: absolute;
-	top: 30%;
-	right: 12%;
-	color: var(--arrow-color);
-}
+.domains-drop:hover {
+	text-decoration: none;
+	color: #142850;
 
-.year-dropdown__options {
 
-	display: none;
-	border: 2px solid #142850;
-	z-index:0;
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	background: white;
-	border-radius: 5px 5px 16px 16px;
-	/* -webkit-filter: brightness(0.95); */
-	/* filter: brightness(0.95); */
-	pointer-events: none;
-	transform: translateY(-100%);
-	overflow:hidden;
-}
-
-.year-dropdown__options li {
-	position: relative;
-	padding: 20px 40px;
-}
-
-.year-dropdown__options li.year-selected::before {
-	position: absolute;
-	content: "";
-	top: 4vh;
-	left: 5%;
-	width: 5px;
-	height: 5px;
-	background: black;
-	border-radius: 50%;
-}
-
-.year-dropdown.year-open {
-	pointer-events: none;
-}
-
-.year-dropdown.year-open .year-dropdown__selected::before {
-	-webkit-animation: reveal-border 0.1s forwards;
-	animation: reveal-border 0.1s forwards;
-}
-
-.year-dropdown.year-open .year-dropdown__selected .year-year-chevron {
-	-webkit-animation: flip-up 0.3s forwards;
-	animation: flip-up 0.3s forwards;
-}
-
-.year-dropdown.year-open .year-dropdown__options {
-	pointer-events: auto;
-	-webkit-animation: slide-down 0.6s forwards var(--ease-in-out-quartic);
-	animation: slide-down 0.6s forwards var(--ease-in-out-quartic);
-}
-
-.year-dropdown.year-close .year-dropdown__selected::before {
-	transform: scaleY(1);
-	-webkit-animation: hide-border 0.3s 0.4s forwards;
-	animation: hide-border 0.3s 0.4s forwards;
-}
-
-.year-dropdown.year-close .year-dropdown__selected .year-old-text {
-	-webkit-animation: fade-out 0.4s forwards;
-	animation: fade-out 0.4s forwards;
-}
-
-.year-dropdown.year-close .year-dropdown__selected .year-nessw-text::before {
-	-webkit-animation: fade-up-in 0.6s forwards;
-	animation: fade-up-in 0.6s forwards;
-}
-
-.year-dropdown.year-close .year-dropdown__selected .year-chevron {
-	-webkit-animation: flip-down 0.3s forwards;
-	animation: flip-down 0.3s forwards;
-}
-
-.year-dropdown.year-close .year-dropdown__options {
-	-webkit-animation: slide-up 0.6s forwards var(--ease-in-out-quartic);
-	animation: slide-up 0.6s forwards var(--ease-in-out-quartic);
-}
-
-@-webkit-keyframes reveal-border {
-	to {
-		transform: scaleY(1);
-	}
-}
-
-@keyframes reveal-border {
-	to {
-		transform: scaleY(1);
-	}
-}
-
-@-webkit-keyframes flip-up {
-	to {
-		transform: scaleY(-1);
-	}
-}
-
-@keyframes flip-up {
-	to {
-		transform: scaleY(-1);
-	}
-}
-
-@-webkit-keyframes slide-down {
-	to {
-		transform: translateY(-5%);
-	}
-}
-
-@keyframes slide-down {
-	to {
-		transform: translateY(-5%);
-	}
-}
-
-@-webkit-keyframes hide-border {
-	to {
-		transform: scaleY(0);
-	}
-}
-
-@keyframes hide-border {
-	to {
-		transform: scaleY(0);
-	}
-}
-
-@-webkit-keyframes fade-out {
-	to {
-		opacity: 0;
-	}
-}
-
-@keyframes fade-out {
-	to {
-		opacity: 0;
-	}
-}
-
-@-webkit-keyframes fade-up-in {
-	from {
-		opacity: 1;
-		transform: translateY(100%);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes fade-up-in {
-	from {
-		opacity: 1;
-		transform: translateY(100%);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@-webkit-keyframes flip-down {
-	from {
-		transform: scaleY(-1);
-	}
-
-	to {
-		transform: scaleY(1);
-	}
-}
-
-@keyframes flip-down {
-	from {
-		transform: scaleY(-1);
-	}
-
-	to {
-		transform: scaleY(1);
-	}
-}
-
-@-webkit-keyframes slide-up {
-	from {
-		transform: translateY(-2%);
-	}
-
-	to {
-		transform: translateY(-100%);
-	}
-}
-
-@keyframes slide-up {
-	from {
-		transform: translateY(-2%);
-	}
-
-	to {
-		transform: translateY(-100%);
-	}
 }
