@@ -5,9 +5,6 @@
 .main-cntnr {
 	margin-top: 60px;
 }
-
-
-
 .search-box {
 
 	margin: auto;
@@ -39,6 +36,7 @@
 	font-size: 1.5vw;
 	margin-left: auto;
 	padding: 0.5vw;
+	padding-left:0.6vw;
 }
 
 .search-txt {
@@ -99,7 +97,9 @@ a.trend {
 	display: flex;
 	border: 2px solid #142850;
 }
-
+.row-2{
+	margin-top:1vw;
+}
 a.ask {
 	/*position: absolute;*/
 	/* text-align: center; */
@@ -147,8 +147,6 @@ a.ask p {
 
 
 }
-
-
 .slideIn {
 	animation-name: slideIn;
 }
@@ -159,6 +157,7 @@ a.ask p {
 
 .top-sec-row {
 	margin-top: 7vw;
+	margin-left:1.5vw;
 }
 
 
@@ -170,17 +169,21 @@ a.ask p {
 	font-size: 1.5vw;
 	width: 100%;
 	padding: 1vw;
+	padding-left:1.2vw;
 	/* transition: all 0.3s; */
 
 
 	/* padding: 1vw 2vw; */
-
+}
+.dropdown.domains {
+	width: 100%;
 
 }
-
-.dropdown.domains {
-	width: 95%;
-
+.dropdown0{
+	width:20vw;
+	position: relative;
+	bottom:0.3vw;
+	left:0.8vw;
 }
 
 .dropdown-toggle.domains-drop::after {
@@ -190,6 +193,4 @@ a.ask p {
 .domains-drop:hover {
 	text-decoration: none;
 	color: #142850;
-
-
 }
