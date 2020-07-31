@@ -33,16 +33,22 @@
 
 	border-radius: 50%;
 	background: #142850;
+	color: white;
 	font-size: 1.5vw;
 	margin-left: auto;
 	padding: 0.5vw;
 	padding-left:0.6vw;
+}
+.search-btn:hover{
+	background: #3263d4;
+	color: white;
 }
 
 .search-txt {
 	border: none;
 	background: none;
 	outline: none;
+	width: 100%;
 	margin-left: 1vw;
 	margin-right: auto;
 	color: #142850;
@@ -156,7 +162,7 @@ a.ask p {
 }
 
 .top-sec-row {
-	margin-top: 7vw;
+	margin-top: 100px;
 	margin-left:1.5vw;
 }
 

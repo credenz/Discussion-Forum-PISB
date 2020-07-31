@@ -29,7 +29,7 @@ body {
 
 .m-card {
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-    background: #050d4e;
+    background: #142850;
     color: white;
     border-radius: 1vw;
     padding-bottom: 2vw;
@@ -41,7 +41,7 @@ body {
     margin-left:7.2vw;
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
     padding-bottom: 2vw;
-    background: #050d4e;
+    background: #142850;
     color: white;
     border-radius: 1vw;
 }
@@ -50,7 +50,7 @@ body {
     font-size: 1.1vw;
     border: none;
     border-radius: 1vw;
-    background: #050d4e;
+    background: #142850;
     color: aliceblue;
     margin-left: 2vw;
 }
@@ -68,9 +68,9 @@ body {
 }
 
 .people-card {
-    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     margin-top: 1.5vw;
-    background: #050d4e;
+    background: #142850;
     color: white;
     border-radius: 1vw;
 }
