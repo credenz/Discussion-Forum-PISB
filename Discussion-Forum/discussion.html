@@ -183,12 +183,12 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <div class="container-fluid brdr main-cntnr">
+    <div class="container-fluid  main-cntnr">
 
 
 
-        <div class="row top-sec-row  brdr d-flex justify-content-center align-items-center">
-            <div class="col-4 brdr">
+        <div class="row top-sec-row   d-flex justify-content-center align-items-center">
+            <div class="col-4 ">
                 <div class="search-box d-flex justify-content-center align-items-center">
                     <input class="search-txt" type="text" name="" placeholder="Type to search ...">
                     <button class="btn btn-prsimary search-btn d-flex justify-content-center align-items-center">
@@ -196,7 +196,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-3 brdr d-flex  align-items-center justify-content-center">
+            <div class="col-3  d-flex  align-items-center justify-content-center">
 
 
                 <div class="dropdown domains d-flex justify-content-center align-items-center">
@@ -226,7 +226,7 @@
                 </script>
 
             </div>
-            <div class="col-2 brdr d-flex align-items-center justify-content-center text-align-center">
+            <div class="col-2  d-flex align-items-center justify-content-center text-align-center">
                 <a href="#" class="trend">
                     <p> Trending &nbsp;&nbsp;&nbsp;
                         <i class="fas fa-bolt"></i>
@@ -235,7 +235,7 @@
                 </a>
             </div>
 
-            <div class=" col-3 brdr d-flex align-items-center justify-content-center text-align-center">
+            <div class=" col-3  d-flex align-items-center justify-content-center text-align-center">
 
                 <a data-toggle="collapse" href="#que1" role="button" aria-expanded="false"
                     aria-controls="collapseExample" class="ask">
@@ -247,92 +247,77 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-9">
-                <div class="justify-content-center align-items-center">
-                    <div class="row-2 brdr d-flex align-items-center justify-content-center text-align-center">
-                        <div class="collapse" id="que1">
-                            <div class="container askQuestion">
-                                <div class="row">
-                                    <div class="col"></div>
-                                    <div class="col-9">
-                                        <div class="row category justify-content-center align-items-center d-flex">
-                                            <div
-                                                class="dropdown0 domains d-flex justify-content-center align-items-center col">
-                                                <a class="drop domains-drop ask-q dropdown-toggle d-flex justify-content-center align-items-center text-align-center "
-                                                    href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                    <span class="qwe">Domains</span>
-                                                </a>
-                                                <div class="dropdown-menu animate slideIn"
-                                                    aria-labelledby="navbarDropdown">
-                                                    <a class="domains-drop-ops dropdown-item ask-q"
-                                                        href="#"><span>Machine
-                                                            Learning
-                                                        </span></a>
-                                                    <a class="domains-drop-ops dropdown-item ask-q"
-                                                        href="#"><span>Artificial
-                                                            Intelligence</span></a>
-                                                    <a class="domains-drop-ops dropdown-item ask-q"
-                                                        href="#"><span>Competitive
-                                                            Programming</span></a>
-                                                    <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>App
-                                                            Development</span></a>
-                                                    <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Web
-                                                            Development</span></a>
-                                                    <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Iot &
-                                                            Robotics</span></a>
-                                                    <a class="domains-drop-ops dropdown-item ask-q"
-                                                        href="#"><span>Digital
-                                                            Design</span></a>
-                                                </div>
-                                            </div>
-                                            <script>
-                                                document.querySelectorAll(".domains-drop-ops.dropdown-item.ask-q").forEach((option) => {
-                                                    let text = option.innerHTML;
-                                                    option.addEventListener("click", function () {
-                                                        document.querySelector(".domains-drop.ask-q").innerHTML = text;
-                                                    })
-                                                })
-                                            </script>
-                                            <div class="col-5 bet"></div>
-                                            <div class="col justify-content-center align-items-center">
-                                                <span class="image-icon">
-                                                    <button class="btn btn-primary">
-                                                        <i class="fa fa-image fa-lg"></i>
-                                                        Add Image
-                                                    </button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <!-- </div> -->
-                                        <div class="row justify-content-center align-items-center">
-                                            <div>
-                                                <input type="text" name="title" id="title" class="title-text"
-                                                    placeholder="Title">
-                                            </div>
-                                        </div>
-                                        <div class="row justify-content-center align-items-center">
-                                            <div>
-                                                <textarea type="text" name="title" id="title" class="title-description"
-                                                    placeholder="Description"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="row justify-content-center align-items-center">
-                                            <button type="submit" class="btn btn-primary submit">POST</button>
+        <div class="row ">
+            <div class="col brdr"></div>
+            <div class="col-9 brdr">
+                <div class="collapse" id="que1">
+                    <div class="row askQuestion">
+                            <div class="col brdr"></div>
+                            <div class="col-9 brdr">
+                                <div class="row category ">
+                                    <div class="dropdown0 brdr domains col-4">
+                                        <a class="drop domains-drop hidden ask-q dropdown-toggle d-flex justify-content-center align-items-center text-align-center "
+                                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <span class="qwe">Domains</span>
+                                        </a>
+                                        <div class="dropdown-menu animate slideIn"
+                                            aria-labelledby="navbarDropdown">
+                                            <a class="domains-drop-ops dropdown-item ask-q"
+                                                href="#"><span>Machine
+                                                    Learning
+                                                </span></a>
+                                            <a class="domains-drop-ops dropdown-item ask-q"
+                                                href="#"><span>Artificial
+                                                    Intelligence</span></a>
+                                            <a class="domains-drop-ops dropdown-item ask-q"
+                                                href="#"><span>Competitive
+                                                    Programming</span></a>
+                                            <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>App
+                                                    Development</span></a>
+                                            <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Web
+                                                    Development</span></a>
+                                            <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Iot &
+                                                    Robotics</span></a>
+                                            <a class="domains-drop-ops dropdown-item ask-q"
+                                                href="#"><span>Digital
+                                                    Design</span></a>
                                         </div>
                                     </div>
-                                    <div class="col"></div>
+                                    <script>
+                                        document.querySelectorAll(".domains-drop-ops.dropdown-item.ask-q").forEach((option) => {
+                                            let text = option.innerHTML;
+                                            option.addEventListener("click", function () {
+                                                document.querySelector(".domains-drop.ask-q").innerHTML = text;
+                                            })
+                                        })
+                                    </script>
+                                    <div class="col bet"></div>
+                                    <div class="col d-flex add-img-wrap">
+                                        <!-- <span class="image-icon"></span> -->
+                                        <button  class="btn btn-primary add-img">
+                                            <i class="fa fa-image fa-lg"></i>
+                                            Add Image
+                                        </button>
+                                    </div>
                                 </div>
-                                <!-- <div class="row"> -->
+                                <div class="row brdr d-flex justify-content-center align-items-center">
+                                        <input type="text" name="title" id="title" class="title-text brdr"
+                                            placeholder="Title">
+                                </div>
+                                <div class="row d-flex justify-content-center align-items-center">
+                                        <textarea type="text" name="title" id="title" class="title-description"
+                                            placeholder="Description"></textarea>
+                                </div>
+                                <div class="row d-flex justify-content-center align-items-center">
+                                    <button type="submit" class="btn btn-primary submit">POST</button>
+                                </div>
                             </div>
-                        </div>
+                            <div class="col brdr"></div>
                     </div>
                 </div>
             </div>
-
-            <div class="col"></div>
+            <div class="col brdr"></div>
         </div>
 
 
