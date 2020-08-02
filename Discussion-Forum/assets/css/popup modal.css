@@ -140,6 +140,20 @@ a.ask p {
 	}
 }
 
+@-webkit-keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY();
+		opacity: 1;
+	}
+
+
+}
+
 @keyframes slideIn {
 	0% {
 		transform: translateY(1rem);
@@ -154,7 +168,8 @@ a.ask p {
 
 }
 .slideIn {
-	animation-name: slideIn;
+	-webkit-animation-name: slideIn;
+	        animation-name: slideIn;
 }
 
 .brdr {
@@ -190,6 +205,7 @@ a.ask p {
 	position: relative;
 	bottom:0.3vw;
 	left:0.8vw;
+	height: 4vw;
 }
 
 .dropdown-toggle.domains-drop::after {
