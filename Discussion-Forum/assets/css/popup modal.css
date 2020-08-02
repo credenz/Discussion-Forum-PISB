@@ -140,6 +140,20 @@ a.ask p {
 	}
 }
 
+@-webkit-keyframes slideIn {
+	0% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY();
+		opacity: 1;
+	}
+
+
+}
+
 @keyframes slideIn {
 	0% {
 		transform: translateY(1rem);
@@ -154,12 +168,11 @@ a.ask p {
 
 }
 .slideIn {
-	animation-name: slideIn;
+	-webkit-animation-name: slideIn;
+	        animation-name: slideIn;
 }
 
-.brdr {
-	/* border: 2px solid red; */
-}
+
 
 .top-sec-row {
 	margin-top: 100px;
@@ -181,15 +194,21 @@ a.ask p {
 
 	/* padding: 1vw 2vw; */
 }
+
+.domains-drop.hidden {
+font-size: 1.2vw;
+border-radius: 5px;
+border-width: 1.5px;
+}
 .dropdown.domains {
 	width: 100%;
 
 }
 .dropdown0{
-	width:20vw;
-	position: relative;
-	bottom:0.3vw;
-	left:0.8vw;
+	margin: 20px 0 0px;
+	padding: 0;
+	display: flex;
+	align-items: flex-end;
 }
 
 .dropdown-toggle.domains-drop::after {
@@ -199,4 +218,19 @@ a.ask p {
 .domains-drop:hover {
 	text-decoration: none;
 	color: #142850;
+}
+
+.add-img-wrap{
+	padding: 0;
+	justify-content: flex-end;
+}
+
+.add-img{
+	/* width: 1; */
+	/* height: 3.5vw; */
+	max-height: 3.5vw;
+	padding: auto 10px ;
+	font-size: 1vw;
+
+	margin-top: 20px;
 }
