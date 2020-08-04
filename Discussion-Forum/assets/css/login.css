@@ -1,8 +1,7 @@
 .login-modal * {
-	font-family: serif;
+	font-family: sans-serif;
 	font-size: auto;
 }
-
 
 .login-modal .container {
 	height: 100%;
@@ -69,7 +68,7 @@
 	width: 220px;
 	margin: 60px -20px;
 	position: relative;
-	box-shadow: 0 0 5px 2px #142850;
+	box-shadow: 0 0 10px 0px #000;
 	border-radius: 30px;
 }
 
@@ -80,6 +79,8 @@
 	border: 10px;
 	outline: none;
 	position: relative;
+	color:black;
+	font-weight: 550;
 }
 
 .login-modal .button-box {
@@ -94,7 +95,7 @@
 	position: absolute;
 	width: 110px;
 	height: 100%;
-	background: skyblue;
+	background: #00AACC;/*00BFE6*/
 	border-radius: 15px;
 	transition: .5s;
 }
@@ -105,14 +106,18 @@
 	width: 270px;
 	transition: .5s;
 	margin-left: -30px;
+	color:black;
+	font-weight: 550;
 }
 
 .login-modal .input-area {
-	top: 150px;
+	top: 145px;
 	position: absolute;
 	width: 270px;
 	transition: .5s;
 	margin-left: -30px;
+	color:black;
+	font-weight: 550;
 }
 
 .login-modal .input-field {
@@ -142,12 +147,14 @@
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: skyblue;
+	background:#00AACC;
 	border: 0;
 	outline: none;
 	margin-left: 18px;
 	border-radius: 15px;
 	transition: all .2s;
+	color:black;
+	font-weight: 550;
 }
 
 .login-modal .submit-btn:hover {
@@ -163,15 +170,15 @@
 
 .login-modal .check-box {
 	margin: 30px 8px 36px 3px;
-	font-family: serif;
+	font-family: sans-serif;
 	font-weight: 600px;
 }
 
 .login-modal span {
-	color: #000;
 	font-size: 15px;
-	bottom: 66px;
+	bottom: 65px;
 	position: absolute;
+	color:black;
 }
 
 .login-modal #login {
@@ -188,13 +195,15 @@
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: skyblue;
+	background:#00AACC;
 	border: 0;
 	outline: none;
 	border-radius: 15px;
 	margin-top: 20px;
 	margin-left: 20px;
-	transition: all .2s
+	transition: all .2s;
+	color:black;
+	font-weight: 550;
 }
 
 .login-modal .submit-button:hover {
@@ -214,13 +223,13 @@
 	top: 8px;
 	cursor: pointer;
 	font-size: 30px;
-	font-weight: bold;
 	transition: all 200ms;
 	font-size: 20px;
 	text-decoration: none;
-	color: black;
+	color:grey;
+	font-weight: bolder;
 }
 
 .login-modal .close:hover {
-	color: black;
+	color:black;
 }
