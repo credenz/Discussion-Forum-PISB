@@ -147,6 +147,11 @@
         margin-right: -0.0vw;
     }
 }
+@media(max-width:375px){
+    a.trend{
+        margin-right:4.9vw
+    }
+}
 
 
        
