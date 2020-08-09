@@ -85,7 +85,7 @@ body select {
 }
 
 a.trend {
-	z-index: 1;
+	z-index: 0;
 
 	line-height: 3.1vw;
 	height: 3.56vw;
