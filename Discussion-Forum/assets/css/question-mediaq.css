@@ -1,0 +1,43 @@
+@media(max-width:767px){
+    .auth-name {
+        font-size: 1.9vw;
+        width: max-content;
+    }
+    
+    .profile-description {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+    .domain {
+        font-size: 1.5vw;
+        width: min-content;
+    }
+    .time{
+        font-size: 2.5vw;
+    }
+    .ans-time{
+        font-size: 2.5vw;
+    }
+    .question{
+        font-size: 3vw;
+    }
+    .like{
+        font-size: 2vw;
+    }
+    .ans-like{
+        font-size: 2vw;
+    }
+    .ansprofile-name{
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+    .profile-image{
+        height: 6vw;
+    }
+    .quest{
+        font-size: 2.5vw;
+    }
+    .people{
+        font-size: 3.5vw;
+    }
+}
