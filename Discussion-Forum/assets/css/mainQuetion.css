@@ -14,7 +14,7 @@
   border-radius: 0.8vw;
   position: relative;
   color: #fff;
-  padding: 12px 0;
+  padding: 12px 20px;
   font-size: 1.2vw;
 
 
@@ -44,6 +44,10 @@
   left: 14%;
   transform: translate(-50%, -50%); */
 }
+
+/* .quetion-box-wrap{
+  padding: auto 20px;
+} */
 
 .profileimg {
   height: 6vw;
@@ -97,12 +101,17 @@
 
 .third-box-wrap{
   flex-direction: column;
+  display: flex;
 }
 
 .third-box {
   /* margin-top: -11.5vw;
   margin-left: 0.7vw; */
   margin-top: 40px;
+}
+
+.third-box.left{
+  display: none;
 }
 
 .domain {
