@@ -1,0 +1,19 @@
+@media(max-width:768px){
+    .quetion-box{
+      font-size: 2.3vw;
+    }
+
+    .author{
+      text-align: center;
+    }
+
+    .que-box{
+      font-size: 2.3vw;
+      padding-right: 2vw;
+    }
+
+    .third-box{
+      font-size: 2.3vw;
+      margin-left: -2vw;
+    }
+}
