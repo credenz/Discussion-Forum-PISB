@@ -85,7 +85,7 @@ body select {
 }
 
 a.trend {
-	z-index: 1;
+	z-index: 0;
 
 	line-height: 3.1vw;
 	height: 3.56vw;
@@ -95,7 +95,7 @@ a.trend {
 	/* padding: 8px; */
 	font-size: 1.5vw;
 	color: black;
-	border-radius: 15px;
+	border-radius: 13px;
 	background: white;
 	cursor: pointer;
 	text-underline-position: none;
@@ -117,7 +117,7 @@ a.ask {
 	font-size: 1.5vw;
 	color: black;
 	border: 2px solid #142852;
-	border-radius: 15px;
+	border-radius: 13px;
 	background: white;
 	cursor: pointer;
 	text-underline-position: none;
