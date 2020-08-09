@@ -87,8 +87,8 @@ body select {
 a.trend {
 	z-index: 1;
 
-	line-height: 3.5vw;
-	height: 3.5vw;
+	line-height: 3.1vw;
+	height: 3.56vw;
 	width: 100%;
 	text-align: center;
 	justify-content: center;
@@ -111,9 +111,9 @@ a.ask {
 	/* text-align: center; */
 	justify-content: center;
 	width: 80%;
-	height: 3.3vw;
-	display: flex;
-	/* padding-top: 8px; */
+	height: 3.5vw;
+	line-height: 3.1vw;
+	padding-left: 2vw; 
 	font-size: 1.5vw;
 	color: black;
 	border: 2px solid #142852;

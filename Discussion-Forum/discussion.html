@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="assets/css/mainQuetion.css">
     <link rel="stylesheet" href="assets/css/popup modal.css">
     <link rel="stylesheet" href="assets/css/askQuestion.css">
+    <link rel="stylesheet" href="assets/css/mediaq-top.css">
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -158,21 +159,21 @@
                     <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
                 </div>
                 <form id="login" class="input-area">
-                    <label><i class="fa fa-user" aria-hidden="true"> Username</i><input type="text" class="input-field"
-                            required></label>
-                    <label><i class="fa fa-lock" aria-hidden="true"> Password</i><input type="password"
+                    <label><i class="fa fa-user" aria-hidden="true"></i> Username<input type="text"
+                            class="input-field" required></label>
+                    <label style="margin-top:0.8vw"><i class="fa fa-lock" aria-hidden="true"></i> Password<input type="password"
                             class="input-field" required></label>
                     <input type="checkbox" class="check-box"><span>Remember Me</span>
                     <button type="submit" class="submit-btn">Log In</button>
                 </form>
                 <form id="register" class="input-group">
-                    <label><i class="fa fa-user" aria-hidden="true"> Username</i><input type="text" class="input-field"
-                            required></label>
-                    <label><i class="fa fa-envelope" aria-hidden="true"> Email</i><input type="email"
+                    <label><i class="fa fa-user" aria-hidden="true"></i>  Username<input type="text"
                             class="input-field" required></label>
-                    <label><i class="fa fa-lock" aria-hidden="true"> Password</i><input type="Password"
+                    <label><i class="fa fa-envelope" aria-hidden="true" style="font-size: 14px;"></i>  Email<input type="email"
                             class="input-field" required></label>
-                    <label><i class="fa fa-lock" aria-hidden="true"> Confirm Password</i><input type="Password"
+                    <label><i class="fa fa-lock" aria-hidden="true"></i>  Password<input type="Password"
+                            class="input-field" required></label>
+                    <label><i class="fa fa-lock" aria-hidden="true"></i>  Confirm Password<input type="Password"
                             class="input-field" required>
                     </label>
                     <button type="submit" class="submit-button">Sign Up</button>
@@ -188,7 +189,7 @@
 
 
         <div class="row top-sec-row   d-flex justify-content-center align-items-center">
-            <div class="col-4 ">
+            <div class="col-12 col-md-4 ">
                 <div class="search-box d-flex justify-content-center align-items-center">
                     <input class="search-txt" type="text" name="" placeholder="Type to search ...">
                     <button class="btn btn-prsimary search-btn d-flex justify-content-center align-items-center">
@@ -196,7 +197,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-3  d-flex  align-items-center justify-content-center">
+            <div class="col-4 col-md-3  d-flex  align-items-center justify-content-center">
 
 
                 <div class="dropdown domains d-flex justify-content-center align-items-center">
@@ -226,7 +227,7 @@
                 </script>
 
             </div>
-            <div class="col-2  d-flex align-items-center justify-content-center text-align-center">
+            <div class="col-4 col-md-2  d-flex align-items-center justify-content-center text-align-center">
                 <a href="#" class="trend">
                     <p> Trending &nbsp;&nbsp;&nbsp;
                         <i class="fas fa-bolt"></i>
@@ -235,7 +236,7 @@
                 </a>
             </div>
 
-            <div class=" col-3  d-flex align-items-center justify-content-center text-align-center">
+            <div class="col-4 col-md-3  d-flex align-items-center justify-content-center text-align-center">
 
                 <a data-toggle="collapse" href="#que1" role="button" aria-expanded="false"
                     aria-controls="collapseExample" class="ask">

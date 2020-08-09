@@ -1,0 +1,46 @@
+@media(max-width:767px){
+    .search-btn{
+        font-size:3vw;
+        padding-left:0.8vw;
+        padding-bottom:0.6vw;
+        margin-bottom:0.5vw;
+        margin-top:0.5vw;
+        margin-right:0.5vw;
+    }
+    .search-box{
+        font-size:3vw;
+        padding-right: 1vw;
+        margin-right:2.5vw;
+        height:6.5vw;
+        margin-bottom:3vw;
+    }
+    .domains-drop{
+        width:200vw;
+        height:6vw;
+        margin-left:0.1vw;
+        margin-right:-2vw;
+        font-size:2.2vw;
+        font-weight: 550;
+        padding-left:1vw;
+        border-radius:12px;
+    }
+    a.trend{
+        height:6vw;
+        line-height: 5.5vw;
+        font-size:2.5vw;
+        margin-right:1vw;
+        padding-right:1vw;
+        padding-left:1vw;
+        border-radius:12px;
+
+    }
+    a.ask{
+        height: 6vw;
+        font-size: 2.65vw;
+        margin-right: 2vw;
+        width:100%;
+        line-height:5.1vw;
+        border-radius:12px;
+    }
+}
+       
