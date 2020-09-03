@@ -12,7 +12,7 @@
 }
 
 .login-modal .form-box {
-	z-index: 2;
+	z-index: 3;
 	width: 300px;
 	height: 430px;
 	position: relative;
@@ -47,7 +47,7 @@
 }
 
 .login-modal .overlay {
-	z-index: 2;
+	z-index: 3;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -79,14 +79,15 @@
 	border: 10px;
 	outline: none;
 	position: relative;
-	color:black;
+	color:white;
 	font-weight: 550;
 }
-
 .login-modal .button-box {
 	position: absolute;
 	top: -16px;
 	left: 60px;
+	background-color: #142850;
+	box-shadow: 0 5px 5px 0 #242424cd;
 }
 
 .login-modal #btn {
@@ -95,7 +96,7 @@
 	position: absolute;
 	width: 110px;
 	height: 100%;
-	background: #00AACC;/*00BFE6*/
+	background: #3b578c;/* #00AACC;/*00BFE6*/
 	border-radius: 15px;
 	transition: .5s;
 }
@@ -106,7 +107,7 @@
 	width: 270px;
 	transition: .5s;
 	margin-left: -30px;
-	color:black;
+	color:#142850;
 	font-weight: 550;
 }
 
@@ -116,7 +117,7 @@
 	width: 270px;
 	transition: .5s;
 	margin-left: -30px;
-	color:black;
+	color:#142850;
 	font-weight: 550;
 }
 
@@ -147,13 +148,13 @@
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background:#00AACC;
+	background:#142850;
 	border: 0;
 	outline: none;
 	margin-left: 18px;
 	border-radius: 15px;
 	transition: all .2s;
-	color:black;
+	color:white;
 	font-weight: 550;
 }
 
@@ -178,7 +179,7 @@
 	font-size: 15px;
 	bottom: 65px;
 	position: absolute;
-	color:black;
+	color:#142850;
 }
 
 .login-modal #login {
@@ -195,14 +196,14 @@
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background:#00AACC;
+	background:#142850;
 	border: 0;
 	outline: none;
 	border-radius: 15px;
 	margin-top: 20px;
 	margin-left: 20px;
 	transition: all .2s;
-	color:black;
+	color:white;
 	font-weight: 550;
 }
 
@@ -226,7 +227,7 @@
 	transition: all 200ms;
 	font-size: 20px;
 	text-decoration: none;
-	color:grey;
+	color:black;
 	font-weight: bolder;
 }
 

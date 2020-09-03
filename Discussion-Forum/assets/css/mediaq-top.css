@@ -61,34 +61,21 @@
     }
 }
 
-/*@media(max-width:900px){
-    .search-box{
-        height:4.5vw;
-        font-size:2.2vw;
+@media(max-width:462px) {
+    a.ask {
+        padding-left: 1.2vw;
+        border-radius: 6px;
     }
-    .search-btn{
-        font-size:1.8vw;
+
+    a.trend {
+        border-radius: 6px;
     }
-    .domains-drop{
-        height:4.5vw;
-        border-radius:12px;
-        font-size:1.8vw;
-        width:200vw;
+
+    .domains-drop {
+        border-radius: 6px;
     }
-    a.trend{
-        height:4.5vw;
-        border-radius:12px;
-        font-size:1.7vw;
-        line-height: 4.2vw;
-    }
-    a.ask{
-        height:4.5vw;
-        border-radius:12px;
-        font-size:1.6vw;
-        line-height: 4.2vw;
-        padding-left:-2vw;
-    }
-}*/
+}
+
 @media(max-width:423px) {
     .search-box {
         font-size: 3.9vw;
@@ -104,6 +91,7 @@
         height: 8vw;
         font-size: 2.5vw;
         border-radius: 6px;
+        margin-right: -2.9vw;
     }
 
     a.trend {
@@ -111,21 +99,21 @@
         width: 250vw;
         font-size: 3vw;
         border-radius: 6px;
-        line-height: 6.6vw;
+        line-height: 6.7vw;
     }
 
     a.ask {
         height: 8vw;
         width: 350vw;
         font-size: 2.8vw;
-        line-height: 6.6vw;
+        line-height: 6.7vw;
         border-radius: 6px;
+        padding-left: 1.4vw;
     }
 }
 
 @media(max-width:387px) {
     .domains-drop {
-        margin-left: -5vw;
         margin-right: 1vw;
         height: 9vw;
         border-radius: 6px;
@@ -162,5 +150,12 @@
         border-radius: 6px;
         margin-left: -10.5vw;
         margin-right: -0.0vw;
+        padding-left: 2.9vw;
+    }
+}
+
+@media(max-width:375px) {
+    a.trend {
+        margin-right: 4.9vw
     }
 }
