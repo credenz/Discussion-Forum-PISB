@@ -152,6 +152,21 @@
         margin-right: -0.0vw;
         padding-left: 2.9vw;
     }
+
+    .pll-0 {
+        padding-left: 0;
+    }
+
+    input.custom-file-input {
+        width: 80px !important;
+        height: 25px !important;
+    }
+}
+
+@media(max-width:348px) {
+    .add-img {
+        font-size: 5.8px !important;
+    }
 }
 
 @media(max-width:375px) {
