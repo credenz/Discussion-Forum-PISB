@@ -1,3 +1,7 @@
+.Hide{
+display: none;
+}
+
 .login-modal * {
 	font-family: sans-serif;
 	font-size: auto;

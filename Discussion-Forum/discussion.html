@@ -137,7 +137,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#popup0">Log In</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link Hide" href="#" id="logOut" >Log Out</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../About-Us/aboutUs.html#contact-us-div">Contact
                         Us</a>
@@ -156,18 +158,19 @@
                 <a class="close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                    <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+                    <button type="button" class="toggle-btn" onclick="login()" >Log In</button>
+                    <!-- <button type="button" class="toggle-btn" onclick="register()">Sign Up</button> -->
+                    <a class="toggle-btn" href="./register.html">Sign Up</a>
                 </div>
                 <form id="login" class="input-area">
-                    <label><i class="fa fa-user" aria-hidden="true"></i> Username<input type="text" class="input-field"
+                    <label><i class="fa fa-user" aria-hidden="true"></i>Email Id<input type="email" id="email" class="input-field"
                             required></label>
-                    <label style="margin-top:0.8vw"><i class="fa fa-lock" aria-hidden="true"></i> Password<input
-                            type="password" class="input-field" required></label>
+                    <label style="margin-top:0.8vw"></label><i class="fa fa-lock" aria-hidden="true"></i> Password<input id="pass"
+                            type="password" class="input-field" required>
                     <input type="checkbox" class="check-box"><span>Remember Me</span>
-                    <button type="submit" class="submit-btn">Log In</button>
+                    <button id="logInBtn" type="submit" class="submit-btn">Log In</button>
                 </form>
-                <form id="register" class="input-group">
+                <!-- <form id="register" class="input-group">
                     <label><i class="fa fa-user" aria-hidden="true"></i> Username<input type="text" class="input-field"
                             required></label>
                     <label><i class="fa fa-envelope" aria-hidden="true" style="font-size: 14px;"></i> Email<input
@@ -178,7 +181,7 @@
                             class="input-field" required>
                     </label>
                     <button type="submit" class="submit-button">Sign Up</button>
-                </form>
+                </form> -->
             </div>
         </div>
 
@@ -753,6 +756,35 @@
         </div>
     </footer>
     <!--footer end-->
+
+    
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script> -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAqZg4mfT-olnnXrbACYwfSUKLXbilu05M",
+      authDomain: "pisb-register.firebaseapp.com",
+      databaseURL: "https://pisb-register.firebaseio.com",
+      projectId: "pisb-register",
+      storageBucket: "pisb-register.appspot.com",
+      messagingSenderId: "567975996062",
+      appId: "1:567975996062:web:76df9477c9480119ac298f",
+      measurementId: "G-RN568ZZ7KQ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+      // firebase.firestore();
+</script>
+<script src="./assets/js/register.js"></script>
 
     <!-- essential js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
