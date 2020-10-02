@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="assets/css/popup modal.css">
     <link rel="stylesheet" href="assets/css/askQuestion.css">
     <link rel="stylesheet" href="assets/css/mediaq-top.css">
+    <link rel="stylesheet" href="assets/css/mediaQueriesMainQue.css">
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -68,7 +69,7 @@
     </div>
 
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-xl ">
+    <nav class="navbar fixed-top navbar-expand-xl " style="z-index:2">
         <a class="navbar-brand" href="../Home/homepage.html"><img id="navlogo" src="../common/navbar/pisb.png"></a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -136,7 +137,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#popup0">Log In</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link Hide" href="#" id="logOut" >Log Out</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../About-Us/aboutUs.html#contact-us-div">Contact
                         Us</a>
@@ -155,29 +158,30 @@
                 <a class="close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
                 <div class="button-box">
                     <div id="btn"></div>
-                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                    <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+                    <button type="button" class="toggle-btn" onclick="login()" >Log In</button>
+                    <!-- <button type="button" class="toggle-btn" onclick="register()">Sign Up</button> -->
+                    <a class="toggle-btn" href="./register.html">Sign Up</a>
                 </div>
                 <form id="login" class="input-area">
-                    <label><i class="fa fa-user" aria-hidden="true"></i> Username<input type="text"
-                            class="input-field" required></label>
-                    <label style="margin-top:0.8vw"><i class="fa fa-lock" aria-hidden="true"></i> Password<input type="password"
-                            class="input-field" required></label>
+                    <label><i class="fa fa-user" aria-hidden="true"></i>Email Id<input type="email" id="email" class="input-field"
+                            required></label>
+                    <label style="margin-top:0.8vw"></label><i class="fa fa-lock" aria-hidden="true"></i> Password<input id="pass"
+                            type="password" class="input-field" required>
                     <input type="checkbox" class="check-box"><span>Remember Me</span>
-                    <button type="submit" class="submit-btn">Log In</button>
+                    <button id="logInBtn" type="submit" class="submit-btn">Log In</button>
                 </form>
-                <form id="register" class="input-group">
-                    <label><i class="fa fa-user" aria-hidden="true"></i>  Username<input type="text"
+                <!-- <form id="register" class="input-group">
+                    <label><i class="fa fa-user" aria-hidden="true"></i> Username<input type="text" class="input-field"
+                            required></label>
+                    <label><i class="fa fa-envelope" aria-hidden="true" style="font-size: 14px;"></i> Email<input
+                            type="email" class="input-field" required></label>
+                    <label><i class="fa fa-lock" aria-hidden="true"></i> Password<input type="Password"
                             class="input-field" required></label>
-                    <label><i class="fa fa-envelope" aria-hidden="true" style="font-size: 14px;"></i>  Email<input type="email"
-                            class="input-field" required></label>
-                    <label><i class="fa fa-lock" aria-hidden="true"></i>  Password<input type="Password"
-                            class="input-field" required></label>
-                    <label><i class="fa fa-lock" aria-hidden="true"></i>  Confirm Password<input type="Password"
+                    <label><i class="fa fa-lock" aria-hidden="true"></i> Confirm Password<input type="Password"
                             class="input-field" required>
                     </label>
                     <button type="submit" class="submit-button">Sign Up</button>
-                </form>
+                </form> -->
             </div>
         </div>
 
@@ -189,7 +193,7 @@
 
 
         <div class="row top-sec-row   d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-4 ">
+            <div class="col-12 col-md-4 brdr">
                 <div class="search-box d-flex justify-content-center align-items-center">
                     <input class="search-txt" type="text" name="" placeholder="Type to search ...">
                     <button class="btn btn-prsimary search-btn d-flex justify-content-center align-items-center">
@@ -197,7 +201,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-4 col-md-3  d-flex  align-items-center justify-content-center">
+            <div class="col-4 col-md-3 brdr  d-flex  align-items-center justify-content-center pll-0">
 
 
                 <div class="dropdown domains d-flex justify-content-center align-items-center">
@@ -227,20 +231,20 @@
                 </script>
 
             </div>
-            <div class="col-4 col-md-2  d-flex align-items-center justify-content-center text-align-center">
+            <div class="col-4 col-md-2 brdr d-flex align-items-center justify-content-center text-align-center">
                 <a href="#" class="trend">
-                    <p> Trending &nbsp;&nbsp;&nbsp;
+                    <p> Trending &nbsp;&nbsp;
                         <i class="fas fa-bolt"></i>
                     </p>
 
                 </a>
             </div>
 
-            <div class="col-4 col-md-3  d-flex align-items-center justify-content-center text-align-center">
+            <div class="col-4 col-md-3 brdr d-flex align-items-center justify-content-center text-align-center">
 
                 <a data-toggle="collapse" href="#que1" role="button" aria-expanded="false"
                     aria-controls="collapseExample" class="ask">
-                    <p> Ask a question&nbsp;&nbsp;&nbsp;
+                    <p> Ask a question&nbsp;&nbsp;
                         <i class="fa fa-plus-square" aria-hidden="true"></i>
                     </p>
                 </a>
@@ -249,76 +253,77 @@
         </div>
 
         <div class="row ">
-            <div class="col brdr"></div>
-            <div class="col-9 brdr">
+            <div class="col-md brdr"></div>
+            <div class="col-md-9 brdr">
                 <div class="collapse" id="que1">
                     <div class="row askQuestion">
-                            <div class="col brdr"></div>
-                            <div class="col-9 brdr">
-                                <div class="row category ">
-                                    <div class="dropdown0 brdr domains col-4">
-                                        <a class="drop domains-drop hidden ask-q dropdown-toggle d-flex justify-content-center align-items-center text-align-center "
-                                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            <span class="qwe">Domains</span>
-                                        </a>
-                                        <div class="dropdown-menu animate slideIn"
-                                            aria-labelledby="navbarDropdown">
-                                            <a class="domains-drop-ops dropdown-item ask-q"
-                                                href="#"><span>Machine
-                                                    Learning
-                                                </span></a>
-                                            <a class="domains-drop-ops dropdown-item ask-q"
-                                                href="#"><span>Artificial
-                                                    Intelligence</span></a>
-                                            <a class="domains-drop-ops dropdown-item ask-q"
-                                                href="#"><span>Competitive
-                                                    Programming</span></a>
-                                            <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>App
-                                                    Development</span></a>
-                                            <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Web
-                                                    Development</span></a>
-                                            <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Iot &
-                                                    Robotics</span></a>
-                                            <a class="domains-drop-ops dropdown-item ask-q"
-                                                href="#"><span>Digital
-                                                    Design</span></a>
-                                        </div>
+                        <div class="col brdr"></div>
+                        <form method="POST" action="" enctype="multipart/form-data" class="col-9 brdr">
+                            <div class="row category ">
+                                <div class="dropdown0 brdr domains col-4">
+                                    <a class="p1 drop domains-drop hidden ask-q dropdown-toggle d-flex justify-content-center align-items-center text-align-center "
+                                        href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <span class="qwe">Domains</span>
+                                    </a>
+                                    <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                                        <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Machine
+                                                Learning
+                                            </span></a>
+                                        <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Artificial
+                                                Intelligence</span></a>
+                                        <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Competitive
+                                                Programming</span></a>
+                                        <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>App
+                                                Development</span></a>
+                                        <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Web
+                                                Development</span></a>
+                                        <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Iot &
+                                                Robotics</span></a>
+                                        <a class="domains-drop-ops dropdown-item ask-q" href="#"><span>Digital
+                                                Design</span></a>
                                     </div>
-                                    <script>
-                                        document.querySelectorAll(".domains-drop-ops.dropdown-item.ask-q").forEach((option) => {
-                                            let text = option.innerHTML;
-                                            option.addEventListener("click", function () {
-                                                document.querySelector(".domains-drop.ask-q").innerHTML = text;
-                                            })
+                                </div>
+                                <script>
+                                    document.querySelectorAll(".domains-drop-ops.dropdown-item.ask-q").forEach((
+                                        option) => {
+                                        let text = option.innerHTML;
+                                        option.addEventListener("click", function () {
+                                            document.querySelector(".domains-drop.ask-q").innerHTML =
+                                                text;
                                         })
-                                    </script>
-                                    <div class="col bet"></div>
-                                    <div class="col d-flex add-img-wrap">
-                                        <!-- <span class="image-icon"></span> -->
-                                        <button  class="btn btn-primary add-img">
-                                            <i class="fa fa-image fa-lg"></i>
-                                            Add Image
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="row brdr d-flex justify-content-center align-items-center">
-                                        <input type="text" name="title" id="title" class="title-text brdr"
-                                            placeholder="Title">
-                                </div>
-                                <div class="row d-flex justify-content-center align-items-center">
-                                        <textarea type="text" name="title" id="title" class="title-description"
-                                            placeholder="Description"></textarea>
-                                </div>
-                                <div class="row d-flex justify-content-center align-items-center">
-                                    <button type="submit" class="btn btn-primary submit">POST</button>
+                                    })
+                                </script>
+                                <div class="col-4 bet"></div>
+                                <div class="col-4 d-flex add-img-wrap">
+                                    <!-- <span class="image-icon"></span> -->
+                                    <button class="btn btn-primary add-img">
+                                        <i style="margin:auto 4px ;" class="fa fa-image fa-lg"></i>
+
+
+                                        Add Image
+                                    </button>
+                                    <input class="custom-file-input" title="upload new files" type="file" id="images"
+                                        name="images" accept="images/*" multiple>
+
                                 </div>
                             </div>
-                            <div class="col brdr"></div>
+                            <div class="row brdr d-flex justify-content-center align-items-center">
+                                <input type="text" name="title" id="title" class="title-text brdr" placeholder="Title">
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <textarea type="text" name="title" id="title" class="title-description"
+                                    placeholder="Description"></textarea>
+                            </div>
+                            <div class="row d-flex justify-content-center align-items-center">
+                                <button type="submit" class="btn btn-primary submit">POST</button>
+                            </div>
+                        </form>
+                        <div class="col brdr"></div>
                     </div>
                 </div>
             </div>
-            <div class="col brdr"></div>
+            <div class="col-md brdr"></div>
         </div>
 
 
@@ -336,20 +341,25 @@
     </style>
     <div class="container-fluid">
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="quetion col-8">
+            <div class="quetion col-12 col-md-8">
                 <div class="recent-q">Recent Questions </div>
-                <a href="./question.html" class="row d-flex px-4">
+                <a href="./question.html" class="row d-flex">
 
-                    <div class="col-2 quetion-box d-flex align-items-center">
+                    <div class="col-2 col-md-2 quetion-box d-flex align-items-center">
                         <div>
                             <img src="../Discussion-Forum/assets/img/male_avatar-512.png" alt="Profile Image"
                                 class="profileimg">
                         </div>
-                        <div class="author">
+                        <div class="author d-flex justify-item-center">
                             <span>Author Name</span>
                         </div>
+                        <div class="third-box left">
+                            <div class="domain">
+                                <span>Artificial Intelligence</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 p-0">
+                    <div class="col col-md-8 p-0">
                         <div class="que-box">
                             <div class="que-title">
                                 <p>
@@ -360,8 +370,8 @@
                             <div class="que-description">
                                 <p>
                                     I am very interested in machine learning and want to learn it in the future. As I
-                                    want to actually understand what is happening underneath the hood
-                                    Please tell me what you think. It will really help me!
+                                    want to actually understand what is happening underneath the hood Please tell me
+                                    what you think. It will really help me!
                                 </p>
                             </div>
                             <div class="reply">
@@ -374,8 +384,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 d-flex third-box-wrap">
-                        <div class="third-box align-itemss-center justify-scontent-center d-flex">
+                    <div class="col-0 col-md-2 third-box-wrap">
+                        <div class="third-box align-itemss-center justify-scontent-center">
                             <div class="domain">
                                 <span>Artificial Intelligence</span>
                             </div>
@@ -383,18 +393,23 @@
 
                     </div>
                 </a>
-                <a href="./question.html" class="row d-flex  px-4">
+                <a href="./question.html" class="row d-flex">
 
-                    <div class="col-2 quetion-box d-flex align-items-center">
+                    <div class="col-2 col-md-2 quetion-box d-flex align-items-center">
                         <div>
                             <img src="../Discussion-Forum/assets/img/male_avatar-512.png" alt="Profile Image"
                                 class="profileimg">
                         </div>
-                        <div class="author">
+                        <div class="author d-flex justify-item-center">
                             <span>Author Name</span>
                         </div>
+                        <div class="third-box left">
+                            <div class="domain">
+                                <span>Artificial Intelligence</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 p-0">
+                    <div class="col col-md-8 p-0">
                         <div class="que-box">
                             <div class="que-title">
                                 <p>
@@ -405,54 +420,8 @@
                             <div class="que-description">
                                 <p>
                                     I am very interested in machine learning and want to learn it in the future. As I
-                                    want to actually understand what is happening underneath the hood
-                                    Please tell me what you think. It will really help me!
-                                </p>
-                            </div>
-
-                            <div class="reply">
-                                <ul class="thumbnails">
-                                    <li class="list-item"><i class="fa fa-thumbs-up fa-lg"> </i> 23</li>
-                                    <li class="list-item"><i class="fa fa-thumbs-down fa-lg"> </i> 10</li>
-                                    <li class="list-item"><i class="fa fa-reply fa-lg"></i> 10</li>
-                                    <li class="list-item time" style="right:0"><em>12h ago</em></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2 d-flex third-box-wrap">
-                        <div class="third-box align-itemss-center justify-scontent-center d-flex">
-                            <div class="domain">
-                                <span>Artificial Intelligence</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </a>
-                <a href="./question.html" class="row d-flex px-4">
-
-                    <div class="col-2 quetion-box d-flex align-items-center">
-                        <div>
-                            <img src="../Discussion-Forum/assets/img/male_avatar-512.png" alt="Profile Image"
-                                class="profileimg">
-                        </div>
-                        <div class="author">
-                            <span>Author Name</span>
-                        </div>
-                    </div>
-                    <div class="col-8 p-0">
-                        <div class="que-box">
-                            <div class="que-title">
-                                <p>
-                                    What are the best Python projects to do while learning the math for machine
-                                    learning?
-                                </p>
-                            </div>
-                            <div class="que-description">
-                                <p>
-                                    I am very interested in machine learning and want to learn it in the future. As I
-                                    want to actually understand what is happening underneath the hood
-                                    Please tell me what you think. It will really help me!
+                                    want to actually understand what is happening underneath the hood Please tell me
+                                    what you think. It will really help me!
                                 </p>
                             </div>
                             <div class="reply">
@@ -465,8 +434,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 d-flex third-box-wrap">
-                        <div class="third-box align-itemss-center justify-scontent-center d-flex">
+                    <div class="col-0 col-md-2 third-box-wrap">
+                        <div class="third-box align-itemss-center justify-scontent-center">
                             <div class="domain">
                                 <span>Artificial Intelligence</span>
                             </div>
@@ -474,18 +443,23 @@
 
                     </div>
                 </a>
-                <a href="./question.html" class="row d-flex  px-4">
+                <a href="./question.html" class="row d-flex">
 
-                    <div class="col-2 quetion-box d-flex align-items-center">
+                    <div class="col-2 col-md-2 quetion-box d-flex align-items-center">
                         <div>
                             <img src="../Discussion-Forum/assets/img/male_avatar-512.png" alt="Profile Image"
                                 class="profileimg">
                         </div>
-                        <div class="author">
+                        <div class="author d-flex justify-item-center">
                             <span>Author Name</span>
                         </div>
+                        <div class="third-box left">
+                            <div class="domain">
+                                <span>Artificial Intelligence</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 p-0">
+                    <div class="col col-md-8 p-0">
                         <div class="que-box">
                             <div class="que-title">
                                 <p>
@@ -496,8 +470,8 @@
                             <div class="que-description">
                                 <p>
                                     I am very interested in machine learning and want to learn it in the future. As I
-                                    want to actually understand what is happening underneath the hood
-                                    Please tell me what you think. It will really help me!
+                                    want to actually understand what is happening underneath the hood Please tell me
+                                    what you think. It will really help me!
                                 </p>
                             </div>
                             <div class="reply">
@@ -510,8 +484,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 d-flex third-box-wrap">
-                        <div class="third-box align-itemss-center justify-scontent-center d-flex">
+                    <div class="col-0 col-md-2 third-box-wrap">
+                        <div class="third-box align-itemss-center justify-scontent-center">
                             <div class="domain">
                                 <span>Artificial Intelligence</span>
                             </div>
@@ -519,6 +493,57 @@
 
                     </div>
                 </a>
+                <a href="./question.html" class="row d-flex">
+
+                    <div class="col-2 col-md-2 quetion-box d-flex align-items-center">
+                        <div>
+                            <img src="../Discussion-Forum/assets/img/male_avatar-512.png" alt="Profile Image"
+                                class="profileimg">
+                        </div>
+                        <div class="author d-flex justify-item-center">
+                            <span>Author Name</span>
+                        </div>
+                        <div class="third-box left">
+                            <div class="domain">
+                                <span>Artificial Intelligence</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-8 p-0">
+                        <div class="que-box">
+                            <div class="que-title">
+                                <p>
+                                    What are the best Python projects to do while learning the math for machine
+                                    learning?
+                                </p>
+                            </div>
+                            <div class="que-description">
+                                <p>
+                                    I am very interested in machine learning and want to learn it in the future. As I
+                                    want to actually understand what is happening underneath the hood Please tell me
+                                    what you think. It will really help me!
+                                </p>
+                            </div>
+                            <div class="reply">
+                                <ul class="thumbnails">
+                                    <li class="list-item"><i class="fa fa-thumbs-up fa-lg"> </i> 23</li>
+                                    <li class="list-item"><i class="fa fa-thumbs-down fa-lg"> </i> 10</li>
+                                    <li class="list-item"><i class="fa fa-reply fa-lg"></i> 10</li>
+                                    <li class="list-item time" style="right:0"><em>12h ago</em></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-0 col-md-2 third-box-wrap">
+                        <div class="third-box align-itemss-center justify-scontent-center">
+                            <div class="domain">
+                                <span>Artificial Intelligence</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
             </div>
         </div>
     </div>
@@ -548,8 +573,7 @@
                                 data-at2x="assets/img/logo.png">
                             <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true"
                                 _lpchecked="1">
-                                <p>PICT IEEE Student Branch aims to inspire innovation in various technological
-                                    fields
+                                <p>PICT IEEE Student Branch aims to inspire innovation in various technological fields
                                     and to help breach boundaries with every new idea.</p>
                             </form>
                         </div>
@@ -733,6 +757,35 @@
     </footer>
     <!--footer end-->
 
+    
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script> -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAqZg4mfT-olnnXrbACYwfSUKLXbilu05M",
+      authDomain: "pisb-register.firebaseapp.com",
+      databaseURL: "https://pisb-register.firebaseio.com",
+      projectId: "pisb-register",
+      storageBucket: "pisb-register.appspot.com",
+      messagingSenderId: "567975996062",
+      appId: "1:567975996062:web:76df9477c9480119ac298f",
+      measurementId: "G-RN568ZZ7KQ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+      // firebase.firestore();
+</script>
+<script src="./assets/js/register.js"></script>
+
     <!-- essential js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -742,7 +795,8 @@
     <script type="text/javascript" src="../common/scrollToTop/arrow.js"></script>
 
     <!-- Preloader js -->
-    <script src="../common/preloader/preloader.js"> </script>
+    <script src="../common/preloader/preloader.js">
+    </script>
     <script type="text/javascript">
         $(window).on("load", function () {
             $(".loader-wrapper").fadeOut("slow");

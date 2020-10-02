@@ -143,8 +143,8 @@ button:focus{
     font-size: 1.1vw;
     line-height: 1.5vw;
     font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
     padding-right: 30px;
     margin-left: -1vw;
     text-align: justify;
@@ -159,7 +159,7 @@ button:focus{
 .profile-description {
     
     font-size: 1.1vw;
-    line-height: 1.5vw;
+    line-height: 1vw;
     font-weight: 400;
     margin-right: 10px;
     text-align: justify;
@@ -187,7 +187,7 @@ button:focus{
     border-radius: 0.5vw;
     padding: 0.35vw;
     font-size: 1vw;
-    width: 90%;
+    width: auto;
     text-align: center;
 
 }

@@ -1,3 +1,8 @@
+body {
+  font-family: "Montserrat" , sans-serif !important; 
+  line-height: 1.6;
+
+}
 .discussion {
   height: 30vh;
 }
@@ -5,30 +10,49 @@
 .quetion a {
   text-decoration: none;
   color: inherit;
+  background-color: #142850;
+  box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.2);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 30px 0;
+  border-radius: 0.8vw;
+  position: relative;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.2vw;
+
+
+}
+
+.recent-q{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .quetion {
   z-index: 1;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 6vw 0 8vw 0;
-  box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.2);
-  border-radius: 0.8vw;
-  position: relative;
-  color: #fff;
-  background-color: #142850;
-  padding: 1.2vw 0 2vw 0;
-  font-size: 1.2vw;
+  margin-bottom: 50px;
+  
 }
 
 .quetion-box {
-  position: absolute;
+  flex-direction: column;
+  margin-top: 30px;
+  /* position: absolute;
   top: 48%;
   left: 14%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
+
+/* .quetion-box-wrap{
+  padding: auto 20px;
+} */
 
 .profileimg {
   height: 6vw;
@@ -64,9 +88,7 @@
   width: 94%;
   margin-left: 5%;
   margin-bottom: 1.6vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+ 
 }
 
 .thumbnails {
@@ -82,9 +104,19 @@
   margin-right: 4vw;
 }
 
+.third-box-wrap{
+  flex-direction: column;
+  display: flex;
+}
+
 .third-box {
-  margin-top: -11.5vw;
-  margin-left: 0.7vw;
+  /* margin-top: -11.5vw;
+  margin-left: 0.7vw; */
+  margin-top: 40px;
+}
+
+.third-box.left{
+  display: none;
 }
 
 .domain {
@@ -96,16 +128,9 @@
   width: -moz-fit-content;
   width: fit-content;
   border: 0.15vw solid #ffffff;
-  margin-bottom: 4vw;
-  margin-right: 4vw;
   text-align: center;
   border-radius: 0.7vw;
   text-transform: uppercase;
   padding: 0.5vw 0.5vw;
 }
 
-.time {
-  display: block;
-  margin-top: 0.7vw;
-  margin-left: 1.3vw;
-}
